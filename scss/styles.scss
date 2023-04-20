@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, black 75%, white);
+    color: beige;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    .headerDivDispositivos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        p{
+            margin-left: 1rem;
+        }
+    }
+    .headerDivTitulo{
+        text-align: left;
+        font-weight: bold;
+    }
+    .headerDivTexto{
+        text-align: left;
+        padding-bottom: 2rem;
+        p{
+            margin-block-end: 0;
+        }
+        spam{
+            font-weight: bold;
+        }
+    }
+}
+
+main{
+    padding: 1rem;
+    display:grid;
+    .indexMain:{
+
+    }
+    .serviciosMain{
+
+    }
+    .trabajosMain{
+
+    }
+    .nuevoClienteMain{
+
+    }
+    .sobreNostrosMain{
+        
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-image: linear-gradient(to top, #9b9b9b, white);
+    color: black;
+    .footerContacto{
+        padding-left: 0.5rem;
+        margin: 0.5rem;
+        align-items: center;
+        font-weight: bold;
+
+    }
+    .footerLista{
+        margin: 0.5rem;
+        list-style:circle;
+        padding-right: 1rem;
+        ul{
+            padding-inline-start: 1rem;
+        }
+    }
+    .footerTexto{
+        margin: 0.5rem;
+        font-size: 0.8rem;
+        text-align: left;
+        spam{
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+    }
+}
