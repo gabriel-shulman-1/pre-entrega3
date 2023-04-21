@@ -87,6 +87,53 @@ header .headerDivTexto spam {
   padding-top: 1rem;
 }
 
+/*servicios*/
+.serviciosMain {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 1rem;
+  gap: 1rem;
+  grid-template-areas: "d1 d2" "d4 d3" "d5 d6" "d8 d7" "d9 d9";
+}
+.serviciosMain .divServMain {
+  align-items: center;
+  margin: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.serviciosMain #uno {
+  grid-area: d1;
+  text-align: right;
+}
+.serviciosMain #dos {
+  grid-area: d2;
+}
+.serviciosMain #tres {
+  grid-area: d3;
+}
+.serviciosMain #cuatro {
+  grid-area: d4;
+}
+.serviciosMain #cinco {
+  grid-area: d5;
+  text-align: right;
+}
+.serviciosMain #seis {
+  grid-area: d6;
+}
+.serviciosMain #siete {
+  grid-area: d7;
+}
+.serviciosMain #ocho {
+  grid-area: d8;
+}
+.serviciosMain #nueve {
+  grid-area: d9;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 /*footer*/
 footer {
   display: flex;

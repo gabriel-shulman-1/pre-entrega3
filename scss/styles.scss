@@ -89,7 +89,60 @@ header{
     }
 }
     
+/*servicios*/
+.serviciosMain{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem;
+    gap: 1rem;
+    grid-template-areas: 
+    "d1 d2"
+    "d4 d3"
+    "d5 d6"
+    "d8 d7"
+    "d9 d9";
 
+    .divServMain{
+        align-items: center;
+        margin: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        }
+    #uno{
+            grid-area: d1;
+            text-align: right;
+        }
+    #dos{
+            grid-area: d2;
+        }
+    #tres{
+            grid-area: d3;
+        }
+    #cuatro{
+            grid-area: d4;
+        }
+    #cinco{
+            grid-area: d5;
+            text-align: right;
+        }
+    #seis{
+            grid-area: d6;
+        }
+    #siete{
+            grid-area: d7;
+        }
+    #ocho{
+            grid-area: d8;
+        }
+    #nueve{
+            grid-area: d9;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+    
+}
 
 /*footer*/
 footer{
