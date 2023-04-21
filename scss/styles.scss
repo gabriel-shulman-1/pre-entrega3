@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
 }
 
+/*headers*/
 header{
     display: flex;
     flex-direction: column;
@@ -35,27 +36,62 @@ header{
         }
     }
 }
-
-main{
-    padding: 1rem;
-    display:grid;
-    .indexMain:{
-
+/*header con grid*/
+#headerSobreNos{
+    display: grid;
+    grid-template-areas: 
+        "titulo img"
+        "texto img";
+    .headerDivTitulo{
+        grid-area: titulo;
     }
-    .serviciosMain{
-
+    .headerDivTexto{
+        grid-area: texto;
     }
-    .trabajosMain{
-
-    }
-    .nuevoClienteMain{
-
-    }
-    .sobreNostrosMain{
-        
+    .headerDivImg{
+        grid-area: img;
     }
 }
+/*mains*/
+.indexMain{
+    padding: 1rem;
+    display:flex;
+    flex-direction: column;
+    #navIndex{
+        .divNavIndexUno{
+            display: flex;
+            flex-direction: row;
+            div{
+                margin: 1rem;
+                spam{
+                    font-weight: bold;
+                }
+                div{
+                    padding-left: 40%;
+                    padding-top: 1rem;
+                }
+            }
+        }
+        .divNavIndexDos{
+            display: flex;
+            flex-direction: row-reverse;
+            div{
+                margin: 1rem;
+                spam{
+                    font-weight: bold;
+                }
+                div{
+                    padding-left: 40%;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}
+    
 
+
+/*footer*/
 footer{
     display: flex;
     flex-direction: row;
@@ -86,4 +122,8 @@ footer{
             font-weight: bold;
         }
     }
+}
+/*otros*/
+img{
+    border-radius: 1rem;
 }
