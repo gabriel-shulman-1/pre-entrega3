@@ -57,33 +57,48 @@ header{
     padding: 1rem;
     display:flex;
     flex-direction: column;
+    
     #navIndex{
         .divNavIndexUno{
             display: flex;
             flex-direction: row;
-            div{
+            div{ 
+                width: 70%;
                 margin: 1rem;
                 spam{
                     font-weight: bold;
                 }
                 div{
-                    padding-left: 40%;
-                    padding-top: 1rem;
+                    margin: 1rem;
+                    width: auto;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
                 }
+            }
+            .imgIndex{
+                width: 30%;
             }
         }
         .divNavIndexDos{
             display: flex;
             flex-direction: row-reverse;
             div{
+                width: 70%;
                 margin: 1rem;
                 spam{
                     font-weight: bold;
                 }
                 div{
-                    padding-left: 40%;
-                    padding-top: 1rem;
+                    margin: 1rem;
+                    width: auto;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
                 }
+            }
+            .imgIndex{
+                width: 30%;
             }
         }
     }
@@ -139,9 +154,128 @@ header{
             grid-area: d9;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            width: 10rem;
+            a{
+                color: white;
+                text-decoration: none;
+            }
         }
-        
-    
+}
+
+/*Trabajos*/
+.trabajosMain{
+    display: grid;
+    margin: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "divUno divDos divDos"
+    "divTres divTres divCuatro"
+    "volver volver volver";
+    .divMainTrabajos{
+        margin: 1rem;   
+    }
+    #divUno{
+        grid-area: divUno;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        margin-right: 0;
+    }
+    #divDos{
+        grid-area: divDos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #divTres{
+        grid-area: divTres;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #divCuatro{
+        grid-area: divCuatro;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 0;
+    }
+    #Volver{
+        grid-area: volver;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+    }
+}
+/*solicitud de trabajos*/
+
+.nuevoClienteMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+    legend{
+        text-align: center;
+    }
+    #labels{
+        text-align: end;
+        margin-bottom: 2rem;
+        div{
+            padding: 1rem;
+        }
+    }
+    form{
+        fieldset{
+            margin: 2rem;
+            legend{
+                margin: 0.8rem;
+                padding: 2rem;
+            }
+            div{
+                margin: 1.5rem;
+                background-image: radial-gradient(#8fb2ff, white 73%)
+            }
+        }
+    }
+    #detalles{
+        margin: 1.5rem;
+        text-align: start;
+        label{
+            align-items: start;
+        }
+        div{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            #det{
+                width: 100%;
+                height: 5rem;
+            }
+        }
+    }
+    #botones{
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+        div{
+            a{
+                color: white;
+                text-decoration: none;
+                
+            }
+        }
+    }
 }
 
 /*footer*/

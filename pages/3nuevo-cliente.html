@@ -20,14 +20,14 @@
 
     <main class="nuevoClienteMain">
         
-        <div>
+        <div id="labels">
             <legend>
                 <h3>Datos del solicitante</h3>
             </legend>
             
             <div>
                 <form>    
-                        <label for="nombre">
+                        <label for="nombre" class="text-capitalize fw-semibold">
                             Nombre y apellido del solicitante:
                         </label>
                     <input type="text" name="nombres" id="nombre">
@@ -45,7 +45,7 @@
     
             <div>
                 <form>
-                    <label for="email">
+                    <label for="email" class="text-capitalize fw-semibold">
                         Email del solicitante:
                     </label>
                     <input type="email" name="email1" id="email">
@@ -54,7 +54,7 @@
 
             <div>
                 <form>
-                    <label for="adress">
+                    <label for="adress" class="text-capitalize fw-semibold">
                         Direccion del solicitante:
                     </label>
                     <input type="adress" name="adress" id="adress">
@@ -63,62 +63,56 @@
 
         </div>
         
-        <div>
+        <form>
 
-            <form>
-
-                <fieldset>
-
-                    <legend>
-                        <h3>Indique el tipo de servicio que precisa:</h3>
-                    </legend>
-
-                    <div>
-                        <p>Sistema de acceso</p>
-                        <input class="form-check-input" type="checkbox" value="">
-                    </div>
-
-                    <div>
-                        <p>Alarmas/video</p>
-                        <input class="form-check-input" type="checkbox" value="">
-                    </div>
-
-                    <div>
-                        <p>Sistemas de gestion para trabajos</p>
-                        <input class="form-check-input" type="checkbox" value="">
-                    </div>
-
-                    <div>
-                        <p>Analisis y estadisticas</p>
-                        <input class="form-check-input" type="checkbox" value="">
-                    </div>
-
-                </fieldset>
-
-            </form>
-
-        </div>
-
-        <div>
             <fieldset>
+
                 <legend>
-                    <h3>Sobre el proyecto</h3>
+                    <h3>Indique el tipo de servicio que precisa:</h3>
                 </legend>
-                <label for="detalle">
-                    hablenos del proyecto que tenga en mente:
-                </label>
+
                 <div>
-                    <input type="text" name="det1" id="det">
+                    <p>Sistema de acceso</p>
+                    <input class="form-check-input" type="checkbox" value="">
                 </div>
+
+                <div>
+                    <p>Alarmas/video</p>
+                    <input class="form-check-input" type="checkbox" value="">
+                </div>
+
+                <div>
+                    <p>Sistemas de gestion para trabajos</p>
+                    <input class="form-check-input" type="checkbox" value="">
+                </div>
+
+                <div>
+                    <p>Analisis y estadisticas</p>
+                    <input class="form-check-input" type="checkbox" value="">
+                </div>
+
             </fieldset>
-        </div>
+
+        </form>
+
+        <fieldset id="detalles">
+            <legend>
+                <h3>Sobre el proyecto</h3>
+            </legend>
+            <label for="detalle">
+                hablenos del proyecto que tenga en mente:
+            </label>
+            <div>
+                <input type="text" name="det1" id="det">
+            </div>
+        </fieldset>
 
         <div id="botones">
-            <div>
-                <a href="../index.html">volver</a>
+            <div  class="btn btn-primary btn-lg" id="b1">
+                <a href="../index.html">Volver</a>
             </div>
 
-            <div>
+            <div  class="btn btn-success btn-lg" id="b2">
                 <a href="../index.html">Enviar</a>
             </div>
         </div>
