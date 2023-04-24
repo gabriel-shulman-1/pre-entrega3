@@ -111,12 +111,13 @@ header{
     justify-items: center;
     margin: 1rem;
     gap: 1rem;
+    grid-template-columns: 35% 30% 35%;
     grid-template-areas: 
-    "d1 d2"
-    "d4 d3"
-    "d5 d6"
-    "d8 d7"
-    "d9 d9";
+    "d1 d1 d2"
+    "d4 d3 d3"
+    "d5 d5 d6"
+    "d8 d7 d7"
+    "d9 d9 d9";
 
     .divServMain{
         align-items: center;
@@ -154,10 +155,12 @@ header{
             grid-area: d9;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            width: 10rem;
             a{
-                color: white;
-                text-decoration: none;
+                p{
+                    margin: 0.5rem;
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                }
             }
         }
 }
