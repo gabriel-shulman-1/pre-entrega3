@@ -36,7 +36,34 @@ header{
             font-weight: bold;
         }
     }
+    @media screen and (max-width:600px){
+        #disp2,#disp3,#disp4,#disp5{
+            display: none;
+        }
+    }
+    @media screen and (min-width:601px) and (max-width:800px){
+        #disp1,#disp3,#disp4,#disp5{
+            display: none;
+        }
+    }
+    @media screen and (min-width:801px) and (max-width:1024px){
+        #disp1,#disp2,#disp4,#disp5{
+            display: none;
+        }
+    }
+    @media screen and (min-width:1025px) and (max-width:1200px){
+        #disp1,#disp2,#disp3,#disp5{
+            display: none;
+        }
+    }
+    @media screen and (min-width:1201px){
+        #disp1,#disp2,#disp3,#disp4{
+            display: none;
+        }
+    }
+        
 }
+
 /*header con grid*/
 #headerSobreNos{
     display: grid;
@@ -113,6 +140,11 @@ header{
             }
         }
     }
+    /*@media screen and (max-width:600px)
+    @media screen and (min-width:601px) and (max-width:800px)
+    @media screen and (min-width:801px) and (max-width:1024px)
+    @media screen and (min-width:1025px) and (max-width:1200px)
+    @media screen and (min-width:1201px)*/
 }
     
 /*servicios*/
@@ -172,6 +204,11 @@ header{
                 text-decoration: none;
             }
         }
+    /*@media screen and (max-width:600px)
+    @media screen and (min-width:601px) and (max-width:800px)
+    @media screen and (min-width:801px) and (max-width:1024px)
+    @media screen and (min-width:1025px) and (max-width:1200px)
+    @media screen and (min-width:1201px)*/
 }
 
 /*Trabajos*/
@@ -227,6 +264,11 @@ header{
                 text-decoration: none;
             }
     }
+    /*@media screen and (max-width:600px)
+    @media screen and (min-width:601px) and (max-width:800px)
+    @media screen and (min-width:801px) and (max-width:1024px)
+    @media screen and (min-width:1025px) and (max-width:1200px)
+    @media screen and (min-width:1201px)*/
 }
 /*solicitud de trabajos*/
 
@@ -292,6 +334,11 @@ header{
             }
         }
     }
+    /*@media screen and (max-width:600px)
+    @media screen and (min-width:601px) and (max-width:800px)
+    @media screen and (min-width:801px) and (max-width:1024px)
+    @media screen and (min-width:1025px) and (max-width:1200px)
+    @media screen and (min-width:1201px)*/
 }
 
 /*sobre nosotros*/
@@ -344,7 +391,12 @@ header{
         a{
             width: 10rem;
         }
-        }
+    }
+    /*@media screen and (max-width:600px)
+    @media screen and (min-width:601px) and (max-width:800px)
+    @media screen and (min-width:801px) and (max-width:1024px)
+    @media screen and (min-width:1025px) and (max-width:1200px)
+    @media screen and (min-width:1201px)*/
 }
 
 /*footer*/
@@ -378,6 +430,11 @@ footer{
             font-weight: bold;
         }
     }
+    /*@media screen and (max-width:600px)
+    @media screen and (min-width:601px) and (max-width:800px)
+    @media screen and (min-width:801px) and (max-width:1024px)
+    @media screen and (min-width:1025px) and (max-width:1200px)
+    @media screen and (min-width:1201px)*/
 }
 /*otros*/
 img{

@@ -37,6 +37,31 @@ header .headerDivTexto h2 {
 header .headerDivTexto spam {
   font-weight: bold;
 }
+@media screen and (max-width: 600px) {
+  header #disp2, header #disp3, header #disp4, header #disp5 {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  header #disp1, header #disp3, header #disp4, header #disp5 {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  header #disp1, header #disp2, header #disp4, header #disp5 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  header #disp1, header #disp2, header #disp3, header #disp5 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  header #disp1, header #disp2, header #disp3, header #disp4 {
+    display: none;
+  }
+}
 
 /*header con grid*/
 #headerSobreNos {
@@ -58,6 +83,11 @@ header .headerDivTexto spam {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  /*@media screen and (max-width:600px)
+  @media screen and (min-width:601px) and (max-width:800px)
+  @media screen and (min-width:801px) and (max-width:1024px)
+  @media screen and (min-width:1025px) and (max-width:1200px)
+  @media screen and (min-width:1201px)*/
 }
 .indexMain #navIndex .divNavIndexUno {
   display: flex;
@@ -121,6 +151,11 @@ header .headerDivTexto spam {
   gap: 1rem;
   grid-template-columns: 35% 30% 35%;
   grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "d9 d9 d9";
+  /*@media screen and (max-width:600px)
+  @media screen and (min-width:601px) and (max-width:800px)
+  @media screen and (min-width:801px) and (max-width:1024px)
+  @media screen and (min-width:1025px) and (max-width:1200px)
+  @media screen and (min-width:1201px)*/
 }
 .serviciosMain .divServMain {
   align-items: center;
@@ -173,6 +208,11 @@ header .headerDivTexto spam {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "divUno divDos divDos" "divTres divTres divCuatro" "volver volver volver";
+  /*@media screen and (max-width:600px)
+  @media screen and (min-width:601px) and (max-width:800px)
+  @media screen and (min-width:801px) and (max-width:1024px)
+  @media screen and (min-width:1025px) and (max-width:1200px)
+  @media screen and (min-width:1201px)*/
 }
 .trabajosMain .divMainTrabajos {
   margin: 1rem;
@@ -224,6 +264,11 @@ header .headerDivTexto spam {
   align-items: center;
   text-align: center;
   margin: 1.5rem;
+  /*@media screen and (max-width:600px)
+  @media screen and (min-width:601px) and (max-width:800px)
+  @media screen and (min-width:801px) and (max-width:1024px)
+  @media screen and (min-width:1025px) and (max-width:1200px)
+  @media screen and (min-width:1201px)*/
 }
 .nuevoClienteMain legend {
   text-align: center;
@@ -287,6 +332,11 @@ header .headerDivTexto spam {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "div1 div1 div2" "div3 div4 div4" "div5 div5 div6" "volver volver volver";
+  /*@media screen and (max-width:600px)
+  @media screen and (min-width:601px) and (max-width:800px)
+  @media screen and (min-width:801px) and (max-width:1024px)
+  @media screen and (min-width:1025px) and (max-width:1200px)
+  @media screen and (min-width:1201px)*/
 }
 .sobreNosotrosMain .divNosMain {
   padding-top: 2rem;
@@ -335,6 +385,11 @@ footer {
   align-items: flex-start;
   background-image: linear-gradient(to top, #9b9b9b, white);
   color: black;
+  /*@media screen and (max-width:600px)
+  @media screen and (min-width:601px) and (max-width:800px)
+  @media screen and (min-width:801px) and (max-width:1024px)
+  @media screen and (min-width:1025px) and (max-width:1200px)
+  @media screen and (min-width:1201px)*/
 }
 footer .footerContacto {
   padding-left: 0.5rem;
