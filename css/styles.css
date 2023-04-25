@@ -119,7 +119,8 @@ header .headerDivTexto spam {
   justify-items: center;
   margin: 1rem;
   gap: 1rem;
-  grid-template-areas: "d1 d2" "d4 d3" "d5 d6" "d8 d7" "d9 d9";
+  grid-template-columns: 35% 30% 35%;
+  grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "d9 d9 d9";
 }
 .serviciosMain .divServMain {
   align-items: center;
@@ -157,11 +158,11 @@ header .headerDivTexto spam {
   grid-area: d9;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 10rem;
 }
-.serviciosMain #nueve a {
-  color: white;
-  text-decoration: none;
+.serviciosMain #nueve a p {
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 /*Trabajos*/
