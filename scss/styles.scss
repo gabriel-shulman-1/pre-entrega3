@@ -166,12 +166,10 @@ header{
             grid-area: d9;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            width: 10rem;
             a{
-                p{
-                    margin: 0.5rem;
-                    font-weight: bold;
-                    font-size: 1.4rem;
-                }
+                color: white;
+                text-decoration: none;
             }
         }
 }

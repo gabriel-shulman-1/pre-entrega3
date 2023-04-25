@@ -158,11 +158,11 @@ header .headerDivTexto spam {
   grid-area: d9;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  width: 10rem;
 }
-.serviciosMain #nueve a p {
-  margin: 0.5rem;
-  font-weight: bold;
-  font-size: 1.4rem;
+.serviciosMain #nueve a {
+  color: white;
+  text-decoration: none;
 }
 
 /*Trabajos*/
