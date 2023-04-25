@@ -30,7 +30,8 @@ header .headerDivTexto {
   text-align: left;
   padding-bottom: 2rem;
 }
-header .headerDivTexto p {
+header .headerDivTexto h2 {
+  font-size: medium;
   margin-block-end: 0;
 }
 header .headerDivTexto spam {
@@ -75,8 +76,13 @@ header .headerDivTexto spam {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin-top: 3rem;
 }
 .indexMain #navIndex .divNavIndexUno .imgIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 30%;
 }
 .indexMain #navIndex .divNavIndexDos {
@@ -96,8 +102,13 @@ header .headerDivTexto spam {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin-top: 3rem;
 }
 .indexMain #navIndex .divNavIndexDos .imgIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 30%;
 }
 
@@ -289,7 +300,7 @@ header .headerDivTexto spam {
 }
 .sobreNosotrosMain #div1 {
   grid-area: div1;
-  text-align: right;
+  text-align: end;
 }
 .sobreNosotrosMain #div2 {
   grid-area: div2;
