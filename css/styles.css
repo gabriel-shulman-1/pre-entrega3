@@ -12,12 +12,17 @@ header {
   color: beige;
   padding: 1rem;
   padding-bottom: 2rem;
+  padding-left: 2rem;
+  /*Movil devices*/
+  /*Ipad/tablets*/
+  /*Small screens/Laptops*/
 }
 header .headerDivDispositivos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 100%;
 }
 header .headerDivDispositivos p {
   margin-left: 1rem;
@@ -38,16 +43,53 @@ header .headerDivTexto spam {
   font-weight: bold;
 }
 @media screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+  header .headerDivTitulo {
+    text-align: center;
+  }
   header #disp2, header #disp3, header #disp4, header #disp5 {
+    display: none;
+  }
+  header .headerDivDispositivos {
+    font-size: 0.75rem;
+    text-align: end;
+  }
+  header .headerDivTexto h2 {
+    font-size: 0.85rem;
+  }
+  header .headerDivTexto p {
+    font-size: 0.65rem;
+  }
+  header .headerDivImg {
     display: none;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
+  header {
+    justify-content: center;
+    align-items: center;
+  }
   header #disp1, header #disp3, header #disp4, header #disp5 {
+    display: none;
+  }
+  header .headerDivTexto h2 {
+    font-size: 0.8rem;
+  }
+  header .headerDivTexto p {
+    font-size: 0.8rem;
+  }
+  header .headerDivImg {
     display: none;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1024px) {
+  header {
+    justify-content: center;
+    align-items: center;
+  }
   header #disp1, header #disp2, header #disp4, header #disp5 {
     display: none;
   }
@@ -83,11 +125,6 @@ header .headerDivTexto spam {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  /*@media screen and (max-width:600px)
-  @media screen and (min-width:601px) and (max-width:800px)
-  @media screen and (min-width:801px) and (max-width:1024px)
-  @media screen and (min-width:1025px) and (max-width:1200px)
-  @media screen and (min-width:1201px)*/
 }
 .indexMain #navIndex .divNavIndexUno {
   display: flex;
@@ -140,6 +177,59 @@ header .headerDivTexto spam {
   justify-content: center;
   align-items: center;
   width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .indexMain .Img {
+    display: none;
+  }
+  .indexMain h3 {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .indexMain #navIndex {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .indexMain #navIndex .divNavIndexUno {
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexMain #navIndex .divNavIndexUno div {
+    width: auto;
+  }
+  .indexMain #navIndex .divNavIndexUno div {
+    width: auto;
+  }
+  .indexMain #navIndex .divNavIndexDos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexMain #navIndex .divNavIndexDos div {
+    width: auto;
+  }
+  .indexMain #navIndex .divNavIndexDos div {
+    width: auto;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .indexMain .Img {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .indexMain .Img-p {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .indexMain .Img-p {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .indexMain .Img-p {
+    display: none;
+  }
 }
 
 /*servicios*/
@@ -385,8 +475,7 @@ footer {
   align-items: flex-start;
   background-image: linear-gradient(to top, #9b9b9b, white);
   color: black;
-  /*@media screen and (max-width:600px)
-  @media screen and (min-width:601px) and (max-width:800px)
+  /*
   @media screen and (min-width:801px) and (max-width:1024px)
   @media screen and (min-width:1025px) and (max-width:1200px)
   @media screen and (min-width:1201px)*/
@@ -413,6 +502,20 @@ footer .footerTexto {
 footer .footerTexto spam {
   font-size: 0.95rem;
   font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*otros*/

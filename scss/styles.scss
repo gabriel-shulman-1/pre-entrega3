@@ -12,11 +12,13 @@ header{
     color: beige;
     padding: 1rem;
     padding-bottom: 2rem;
+    padding-left: 2rem;
     .headerDivDispositivos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
+        width: 100%;
         p{
             margin-left: 1rem;
         }
@@ -36,21 +38,60 @@ header{
             font-weight: bold;
         }
     }
+    /*Movil devices*/
     @media screen and (max-width:600px){
+        .headerDivTitulo{
+            text-align: center;
+        }
         #disp2,#disp3,#disp4,#disp5{
             display: none;
         }
+        justify-content: center;
+        align-items: center;
+        .headerDivDispositivos{
+            font-size: 0.75rem;
+            text-align: end;
+        }
+        .headerDivTexto{
+            h2{
+                font-size: 0.85rem;
+            }
+            p{
+                font-size: 0.65rem;
+            }
+        }
+        .headerDivImg{
+            display: none;
+        }
     }
+    /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         #disp1,#disp3,#disp4,#disp5{
             display: none;
         }
+        justify-content: center;
+        align-items: center;
+        .headerDivTexto{
+            h2{
+                font-size: 0.8rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+        .headerDivImg{
+            display: none;
+        }
     }
+    /*Small screens/Laptops*/
     @media screen and (min-width:801px) and (max-width:1024px){
         #disp1,#disp2,#disp4,#disp5{
             display: none;
         }
+        justify-content: center;
+        align-items: center;
     }
+    
     @media screen and (min-width:1025px) and (max-width:1200px){
         #disp1,#disp2,#disp3,#disp5{
             display: none;
@@ -140,11 +181,59 @@ header{
             }
         }
     }
-    /*@media screen and (max-width:600px)
-    @media screen and (min-width:601px) and (max-width:800px)
-    @media screen and (min-width:801px) and (max-width:1024px)
-    @media screen and (min-width:1025px) and (max-width:1200px)
-    @media screen and (min-width:1201px)*/
+    @media screen and (max-width:600px){
+        .Img{
+            display: none;
+        }
+        h3{
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        #navIndex{
+            font-size: 0.9rem;
+            text-align: center;
+            .divNavIndexUno{
+                flex-direction: column;
+                align-items: center;
+                div{
+                    width: auto;
+                }
+                div{
+                    width: auto;
+                }
+            }
+            .divNavIndexDos{
+                flex-direction: column;
+                align-items: center;
+                div{
+                    width: auto;
+                }
+                div{
+                    width: auto;
+                }
+            }
+        }
+    }
+    @media screen and (min-width:601px) and (max-width:800px){
+        .Img{
+            display: none;
+        }
+    }
+    @media screen and (min-width:801px) and (max-width:1024px){
+        .Img-p{
+            display: none;
+        }
+    }
+    @media screen and (min-width:1025px) and (max-width:1200px){
+        .Img-p{
+            display: none;
+        }
+    }
+    @media screen and (min-width:1201px){
+        .Img-p{
+            display: none;
+        }
+    }
 }
     
 /*servicios*/
@@ -411,7 +500,6 @@ footer{
         margin: 0.5rem;
         align-items: center;
         font-weight: bold;
-
     }
     .footerLista{
         margin: 0.5rem;
@@ -430,8 +518,17 @@ footer{
             font-weight: bold;
         }
     }
-    /*@media screen and (max-width:600px)
-    @media screen and (min-width:601px) and (max-width:800px)
+    @media screen and (max-width:600px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width:601px) and (max-width:800px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*
     @media screen and (min-width:801px) and (max-width:1024px)
     @media screen and (min-width:1025px) and (max-width:1200px)
     @media screen and (min-width:1201px)*/
