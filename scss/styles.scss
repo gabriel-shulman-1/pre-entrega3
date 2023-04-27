@@ -456,13 +456,54 @@ header{
             }
         }
     }
-    /*@media screen and (max-width:600px)
-    @media screen and (min-width:601px) and (max-width:800px)
-    @media screen and (min-width:801px) and (max-width:1024px)
-    @media screen and (min-width:1025px) and (max-width:1200px)
-    @media screen and (min-width:1201px)*/
-}
+    @media screen and (max-width:600px){
+        #labels{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+                   
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            fieldset{
+                legend{
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+        #botones{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        } 
+    }
+    @media screen and (min-width:601px) and (max-width:800px){
 
+    }
+    @media screen and (min-width:801px) and (max-width:1024px){
+
+    }
+    @media screen and (min-width:1025px) and (max-width:1200px){
+
+    }
+    @media screen and (min-width:1201px){
+
+    }
+}
 /*sobre nosotros*/
 
 .sobreNosotrosMain{

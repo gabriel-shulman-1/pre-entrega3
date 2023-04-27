@@ -380,11 +380,6 @@ header .headerDivTexto spam {
   align-items: center;
   text-align: center;
   margin: 1.5rem;
-  /*@media screen and (max-width:600px)
-  @media screen and (min-width:601px) and (max-width:800px)
-  @media screen and (min-width:801px) and (max-width:1024px)
-  @media screen and (min-width:1025px) and (max-width:1200px)
-  @media screen and (min-width:1201px)*/
 }
 .nuevoClienteMain legend {
   text-align: center;
@@ -440,7 +435,36 @@ header .headerDivTexto spam {
   text-decoration: none;
   width: 10rem;
 }
-
+@media screen and (max-width: 600px) {
+  .nuevoClienteMain #labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain #labels div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nuevoClienteMain form fieldset legend {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .nuevoClienteMain #botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
 /*sobre nosotros*/
 .sobreNosotrosMain {
   display: grid;
