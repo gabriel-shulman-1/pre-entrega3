@@ -241,11 +241,6 @@ header .headerDivTexto spam {
   gap: 1rem;
   grid-template-columns: 35% 30% 35%;
   grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "d9 d9 d9";
-  /*@media screen and (max-width:600px)
-  @media screen and (min-width:601px) and (max-width:800px)
-  @media screen and (min-width:801px) and (max-width:1024px)
-  @media screen and (min-width:1025px) and (max-width:1200px)
-  @media screen and (min-width:1201px)*/
 }
 .serviciosMain .divServMain {
   align-items: center;
@@ -289,6 +284,18 @@ header .headerDivTexto spam {
   color: white;
   text-decoration: none;
 }
+@media screen and (max-width: 800px) {
+  .serviciosMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviciosMain h3 {
+    text-align: center;
+  }
+  .serviciosMain p {
+    text-align: justify;
+  }
+}
 
 /*Trabajos*/
 .trabajosMain {
@@ -298,8 +305,7 @@ header .headerDivTexto spam {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "divUno divDos divDos" "divTres divTres divCuatro" "volver volver volver";
-  /*@media screen and (max-width:600px)
-  @media screen and (min-width:601px) and (max-width:800px)
+  /*@media screen and (min-width:601px) and (max-width:800px)
   @media screen and (min-width:801px) and (max-width:1024px)
   @media screen and (min-width:1025px) and (max-width:1200px)
   @media screen and (min-width:1201px)*/
@@ -345,6 +351,26 @@ header .headerDivTexto spam {
 .trabajosMain #Volver a {
   color: white;
   text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .trabajosMain {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "divUno" "divDos" "divCuatro" "divTres" "volver";
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos h2 {
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos iframe {
+    width: 100%;
+  }
 }
 
 /*solicitud de trabajos*/

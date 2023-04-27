@@ -121,6 +121,7 @@ header{
         grid-area: img;
     }
 }
+
 /*mains*/
 .indexMain{
     padding: 1rem;
@@ -213,6 +214,7 @@ header{
                 }
             }
         }
+
     }
     @media screen and (min-width:601px) and (max-width:800px){
         .Img{
@@ -235,7 +237,7 @@ header{
         }
     }
 }
-    
+
 /*servicios*/
 .serviciosMain{
     display: grid;
@@ -293,12 +295,18 @@ header{
                 text-decoration: none;
             }
         }
-    /*@media screen and (max-width:600px)
-    @media screen and (min-width:601px) and (max-width:800px)
-    @media screen and (min-width:801px) and (max-width:1024px)
-    @media screen and (min-width:1025px) and (max-width:1200px)
-    @media screen and (min-width:1201px)*/
+    @media screen and (max-width:800px){
+        display: flex;
+        flex-direction: column;
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        }
 }
+
 
 /*Trabajos*/
 .trabajosMain{
@@ -353,8 +361,33 @@ header{
                 text-decoration: none;
             }
     }
-    /*@media screen and (max-width:600px)
-    @media screen and (min-width:601px) and (max-width:800px)
+    
+    @media screen and (max-width:800px){
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        "divUno"
+        "divDos"
+        "divCuatro"
+        "divTres"
+        "volver";
+        text-align: center;
+        .divMainTrabajos{
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+            }
+            p{
+                text-align: justify;
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+    /*@media screen and (min-width:601px) and (max-width:800px)
     @media screen and (min-width:801px) and (max-width:1024px)
     @media screen and (min-width:1025px) and (max-width:1200px)
     @media screen and (min-width:1201px)*/
