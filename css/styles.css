@@ -284,7 +284,7 @@ header .headerDivTexto spam {
   color: white;
   text-decoration: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .serviciosMain {
     display: flex;
     flex-direction: column;
@@ -296,7 +296,18 @@ header .headerDivTexto spam {
     text-align: justify;
   }
 }
-
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .serviciosMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviciosMain h3 {
+    text-align: center;
+  }
+  .serviciosMain p {
+    text-align: justify;
+  }
+}
 /*Trabajos*/
 .trabajosMain {
   display: grid;
@@ -480,6 +491,36 @@ header .headerDivTexto spam {
     gap: 2rem;
   }
 }
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .nuevoClienteMain #labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain #labels div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nuevoClienteMain form fieldset legend {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .nuevoClienteMain #botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
 /*sobre nosotros*/
 .sobreNosotrosMain {
   display: grid;
@@ -545,10 +586,18 @@ header .headerDivTexto spam {
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .sobreNosotrosMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "div1" "div2" "div4" "div3" "div5" "div6" "volver";
+  }
+  .sobreNosotrosMain .divNosMain {
+    padding: 0;
+  }
+  .sobreNosotrosMain .divNosMain p {
+    text-align: justify;
+  }
+  .sobreNosotrosMain .divNosMain p {
+    text-align: justify;
   }
 }
 /*footer*/
