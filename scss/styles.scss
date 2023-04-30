@@ -13,6 +13,74 @@ header{
     padding: 1rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
+
+    .headerDivTitulo{
+        text-align: left;
+        font-weight: bold;
+        #botonesDeAcceso{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1rem;
+            #titulo1{
+                margin-right: auto;
+            }
+    
+            .acces{
+                display: flex;
+                flex-direction: column;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                transition: 3s;
+                width: 1rem;
+                height: 3rem;
+                background-color: #ffffff;
+                border-radius: 2rem;
+                justify-content: center;
+                text-align: center;
+                a{
+                    color: transparent;
+                    transition: .5s;
+                    text-decoration: none;
+                    
+                }
+            }
+            .acces:hover{
+                display: flex;
+                flex-direction: column;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                transition: 1s;
+                width: 20%;
+                height: 3rem;
+                border-radius: 2rem;
+                justify-content: center;
+                text-align: center;
+                a{
+                    color: transparent;
+                    transition: 1s;
+                    color: white;
+                    transition-delay: 1s;
+                }
+            }
+            #uno:hover{
+                background-color: #4119d3;
+            }
+            #dos:hover{
+                background-color: #09ee28;
+            }
+            #tres:hover{
+                background-color: #fbff00;
+                a{
+                    color: gray;
+                }
+            }
+            #cuatro:hover{
+                background-color: #ff3c00;
+            }
+        }
+    }
+    
     .headerDivDispositivos{
         display: flex;
         flex-direction: row;
@@ -23,10 +91,7 @@ header{
             margin-left: 1rem;
         }
     }
-    .headerDivTitulo{
-        text-align: left;
-        font-weight: bold;
-    }
+    
     .headerDivTexto{
         text-align: left;
         padding-bottom: 2rem;
@@ -42,6 +107,44 @@ header{
     @media screen and (max-width:600px){
         .headerDivTitulo{
             text-align: center;
+            #botonesDeAcceso{
+                margin-top: 38%;
+                margin-left: -24%;
+                position: fixed;
+                flex-direction: column;
+                align-items:start;
+                gap: 1rem;
+                .acces{
+                    width: 4.5rem;
+                    background-color: #00000029;
+                }
+                .acces:hover{
+                    width: 20rem;
+                }
+                #uno:hover{
+                    background-color: #4119d3;
+                }
+                #dos:hover{
+                    background-color: #09ee28;
+                }
+                #tres:hover{
+                    background-color: #fbff00;
+                    a{
+                        color: gray;
+                    }
+                }
+                #cuatro:hover{
+                    background-color: #ff3c00;
+                }
+                #titulo1{
+                    display: none;
+                }
+                div{
+                    h2{
+                        display: none;
+                    }
+                }
+            }
         }
         #disp2,#disp3,#disp4,#disp5{
             display: none;
@@ -64,10 +167,52 @@ header{
             display: none;
         }
     }
+
     /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         #disp1,#disp3,#disp4,#disp5{
             display: none;
+        }
+        .headerDivTitulo{
+            text-align: center;
+            #botonesDeAcceso{
+                margin-top: 38%;
+                margin-left: -29%;
+                position: fixed;
+                flex-direction: column;
+                align-items:start;
+                gap: 1rem;
+                .acces{
+                    width: 4.5rem;
+                    background-color: #00000029;
+                }
+                .acces:hover{
+                    width: 20rem;
+                }
+                #uno:hover{
+                    background-color: #4119d3;
+                }
+                #dos:hover{
+                    background-color: #09ee28;
+                }
+                #tres:hover{
+                    background-color: #fbff00;
+                    a{
+                        color: gray;
+                    }
+                }
+                #cuatro:hover{
+                    background-color: #ff3c00;
+                }
+                #titulo1{
+                    display: none;
+                }
+                div{
+                    h2{
+                        display: none;
+                    }
+                }
+            }
         }
         justify-content: center;
         align-items: center;
@@ -79,6 +224,7 @@ header{
                 font-size: 0.8rem;
             }
         }
+        
         .headerDivImg{
             display: none;
         }
@@ -88,19 +234,26 @@ header{
         #disp1,#disp2,#disp4,#disp5{
             display: none;
         }
+        .headerDivTitulo{
+            #botonesDeAcceso{
+                display: none;
+            }
+        }
         justify-content: center;
         align-items: center;
     }
     
     @media screen and (min-width:1025px) and (max-width:1200px){
-        #disp1,#disp2,#disp3,#disp5{
+        #disp1,#disp2,#disp3,#disp5,#titulo2{
             display: none;
         }
     }
+
     @media screen and (min-width:1201px){
-        #disp1,#disp2,#disp3,#disp4{
+        #disp1,#disp2,#disp3,#disp4,#titulo2{
             display: none;
         }
+
     }
         
 }

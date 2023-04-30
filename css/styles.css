@@ -17,6 +17,70 @@ header {
   /*Ipad/tablets*/
   /*Small screens/Laptops*/
 }
+header .headerDivTitulo {
+  text-align: left;
+  font-weight: bold;
+}
+header .headerDivTitulo #botonesDeAcceso {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+header .headerDivTitulo #botonesDeAcceso #titulo1 {
+  margin-right: auto;
+}
+header .headerDivTitulo #botonesDeAcceso .acces {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: 3s;
+  width: 1rem;
+  height: 3rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+header .headerDivTitulo #botonesDeAcceso .acces a {
+  color: transparent;
+  transition: 0.5s;
+  text-decoration: none;
+}
+header .headerDivTitulo #botonesDeAcceso .acces:hover {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: 1s;
+  width: 20%;
+  height: 3rem;
+  border-radius: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+header .headerDivTitulo #botonesDeAcceso .acces:hover a {
+  color: transparent;
+  transition: 1s;
+  color: white;
+  transition-delay: 1s;
+}
+header .headerDivTitulo #botonesDeAcceso #uno:hover {
+  background-color: #4119d3;
+}
+header .headerDivTitulo #botonesDeAcceso #dos:hover {
+  background-color: #09ee28;
+}
+header .headerDivTitulo #botonesDeAcceso #tres:hover {
+  background-color: #fbff00;
+}
+header .headerDivTitulo #botonesDeAcceso #tres:hover a {
+  color: gray;
+}
+header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
+  background-color: #ff3c00;
+}
 header .headerDivDispositivos {
   display: flex;
   flex-direction: row;
@@ -26,10 +90,6 @@ header .headerDivDispositivos {
 }
 header .headerDivDispositivos p {
   margin-left: 1rem;
-}
-header .headerDivTitulo {
-  text-align: left;
-  font-weight: bold;
 }
 header .headerDivTexto {
   text-align: left;
@@ -49,6 +109,42 @@ header .headerDivTexto spam {
   }
   header .headerDivTitulo {
     text-align: center;
+  }
+  header .headerDivTitulo #botonesDeAcceso {
+    margin-top: 38%;
+    margin-left: -24%;
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso .acces {
+    width: 4.5rem;
+    background-color: rgba(0, 0, 0, 0.1607843137);
+  }
+  header .headerDivTitulo #botonesDeAcceso .acces:hover {
+    width: 20rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso #uno:hover {
+    background-color: #4119d3;
+  }
+  header .headerDivTitulo #botonesDeAcceso #dos:hover {
+    background-color: #09ee28;
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres:hover {
+    background-color: #fbff00;
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres:hover a {
+    color: gray;
+  }
+  header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
+    background-color: #ff3c00;
+  }
+  header .headerDivTitulo #botonesDeAcceso #titulo1 {
+    display: none;
+  }
+  header .headerDivTitulo #botonesDeAcceso div h2 {
+    display: none;
   }
   header #disp2, header #disp3, header #disp4, header #disp5 {
     display: none;
@@ -75,6 +171,45 @@ header .headerDivTexto spam {
   header #disp1, header #disp3, header #disp4, header #disp5 {
     display: none;
   }
+  header .headerDivTitulo {
+    text-align: center;
+  }
+  header .headerDivTitulo #botonesDeAcceso {
+    margin-top: 38%;
+    margin-left: -29%;
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso .acces {
+    width: 4.5rem;
+    background-color: rgba(0, 0, 0, 0.1607843137);
+  }
+  header .headerDivTitulo #botonesDeAcceso .acces:hover {
+    width: 20rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso #uno:hover {
+    background-color: #4119d3;
+  }
+  header .headerDivTitulo #botonesDeAcceso #dos:hover {
+    background-color: #09ee28;
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres:hover {
+    background-color: #fbff00;
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres:hover a {
+    color: gray;
+  }
+  header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
+    background-color: #ff3c00;
+  }
+  header .headerDivTitulo #botonesDeAcceso #titulo1 {
+    display: none;
+  }
+  header .headerDivTitulo #botonesDeAcceso div h2 {
+    display: none;
+  }
   header .headerDivTexto h2 {
     font-size: 0.8rem;
   }
@@ -93,14 +228,17 @@ header .headerDivTexto spam {
   header #disp1, header #disp2, header #disp4, header #disp5 {
     display: none;
   }
+  header .headerDivTitulo #botonesDeAcceso {
+    display: none;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-  header #disp1, header #disp2, header #disp3, header #disp5 {
+  header #disp1, header #disp2, header #disp3, header #disp5, header #titulo2 {
     display: none;
   }
 }
 @media screen and (min-width: 1201px) {
-  header #disp1, header #disp2, header #disp3, header #disp4 {
+  header #disp1, header #disp2, header #disp3, header #disp4, header #titulo2 {
     display: none;
   }
 }
