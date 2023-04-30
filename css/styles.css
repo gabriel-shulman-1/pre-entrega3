@@ -207,8 +207,8 @@ header .headerDivTexto spam {
   header .headerDivTitulo #botonesDeAcceso #titulo1 {
     display: none;
   }
-  header .headerDivTitulo #botonesDeAcceso div h2 {
-    display: none;
+  header .headerDivTitulo #botonesDeAcceso div {
+    margin-left: 4rem;
   }
   header .headerDivTexto h2 {
     font-size: 0.8rem;
@@ -221,15 +221,14 @@ header .headerDivTexto spam {
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1024px) {
-  header {
-    justify-content: center;
-    align-items: center;
-  }
-  header #disp1, header #disp2, header #disp4, header #disp5 {
+  header #disp1, header #disp2, header #disp4, header #disp5, header #titulo2 {
     display: none;
   }
-  header .headerDivTitulo #botonesDeAcceso {
-    display: none;
+  header #titulo1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {

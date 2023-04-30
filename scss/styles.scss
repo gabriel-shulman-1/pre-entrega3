@@ -207,10 +207,7 @@ header{
                 #titulo1{
                     display: none;
                 }
-                div{
-                    h2{
-                        display: none;
-                    }
+                div{margin-left: 4rem;
                 }
             }
         }
@@ -231,16 +228,15 @@ header{
     }
     /*Small screens/Laptops*/
     @media screen and (min-width:801px) and (max-width:1024px){
-        #disp1,#disp2,#disp4,#disp5{
+        #disp1,#disp2,#disp4,#disp5,#titulo2{
             display: none;
         }
-        .headerDivTitulo{
-            #botonesDeAcceso{
-                display: none;
-            }
+        #titulo1{
+            font-size: 2rem;
         }
-        justify-content: center;
-        align-items: center;
+        h2{
+            font-size: 1rem;
+        }
     }
     
     @media screen and (min-width:1025px) and (max-width:1200px){
