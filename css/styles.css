@@ -111,19 +111,33 @@ header .headerDivTexto spam {
     text-align: center;
   }
   header .headerDivTitulo #botonesDeAcceso {
-    margin-top: 38%;
+    margin-top: 17%;
     margin-left: -24%;
     position: fixed;
     flex-direction: column;
     align-items: start;
-    gap: 1rem;
+    gap: 2rem;
   }
   header .headerDivTitulo #botonesDeAcceso .acces {
     width: 4.5rem;
-    background-color: rgba(0, 0, 0, 0.1607843137);
   }
   header .headerDivTitulo #botonesDeAcceso .acces:hover {
     width: 20rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso #uno {
+    background-color: rgba(65, 25, 211, 0.2588235294);
+  }
+  header .headerDivTitulo #botonesDeAcceso #dos {
+    background-color: rgba(0, 255, 34, 0.2588235294);
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres {
+    background-color: rgba(225, 255, 0, 0.2588235294);
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres a {
+    color: transparent;
+  }
+  header .headerDivTitulo #botonesDeAcceso #cuatro {
+    background-color: rgba(255, 0, 0, 0.2588235294);
   }
   header .headerDivTitulo #botonesDeAcceso #uno:hover {
     background-color: #4119d3;
@@ -175,19 +189,33 @@ header .headerDivTexto spam {
     text-align: center;
   }
   header .headerDivTitulo #botonesDeAcceso {
-    margin-top: 38%;
-    margin-left: -29%;
+    margin-top: 17%;
+    margin-left: -24%;
     position: fixed;
     flex-direction: column;
     align-items: start;
-    gap: 1rem;
+    gap: 2rem;
   }
   header .headerDivTitulo #botonesDeAcceso .acces {
     width: 4.5rem;
-    background-color: rgba(0, 0, 0, 0.1607843137);
   }
   header .headerDivTitulo #botonesDeAcceso .acces:hover {
     width: 20rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso #uno {
+    background-color: rgba(65, 25, 211, 0.2588235294);
+  }
+  header .headerDivTitulo #botonesDeAcceso #dos {
+    background-color: rgba(0, 255, 34, 0.2588235294);
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres {
+    background-color: rgba(225, 255, 0, 0.2588235294);
+  }
+  header .headerDivTitulo #botonesDeAcceso #tres a {
+    color: transparent;
+  }
+  header .headerDivTitulo #botonesDeAcceso #cuatro {
+    background-color: rgba(255, 0, 0, 0.2588235294);
   }
   header .headerDivTitulo #botonesDeAcceso #uno:hover {
     background-color: #4119d3;
@@ -208,7 +236,7 @@ header .headerDivTexto spam {
     display: none;
   }
   header .headerDivTitulo #botonesDeAcceso div {
-    margin-left: 4rem;
+    display: none;
   }
   header .headerDivTexto h2 {
     font-size: 0.8rem;
