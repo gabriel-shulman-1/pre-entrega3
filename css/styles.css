@@ -5,6 +5,70 @@ body {
 }
 
 /*headers*/
+#menu1 {
+  transition: 1s;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  background-image: linear-gradient(to right, black 5%, transparent 95%);
+  height: 100%;
+  padding: 1rem;
+  width: 1rem;
+  /*Desktops*/
+}
+#menu1 h2 {
+  transition: 3s;
+  color: black;
+  margin-left: 2rem;
+}
+#menu1 .acces {
+  transition: 2s;
+  text-decoration: none;
+}
+#menu1 .acces a {
+  transition: 2s;
+  color: transparent;
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #menu1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #menu1 {
+    display: none;
+  }
+}
+
+#menu1:hover {
+  transition: 1s;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.431372549);
+  height: 100%;
+  padding: 1rem;
+  width: 14rem;
+}
+#menu1:hover h2 {
+  transition: 3s;
+  margin-left: 0;
+  color: transparent;
+}
+#menu1:hover .acces {
+  transition: 3s;
+}
+#menu1:hover .acces a {
+  transition: 2s;
+  color: white;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -16,6 +80,7 @@ header {
   /*Movil devices*/
   /*Ipad/tablets*/
   /*Small screens/Laptops*/
+  /*Desktops*/
 }
 header .headerDivTitulo {
   text-align: left;
@@ -31,6 +96,7 @@ header .headerDivTitulo #botonesDeAcceso #titulo1 {
   margin-right: auto;
 }
 header .headerDivTitulo #botonesDeAcceso .acces {
+  transition: 3s;
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
@@ -49,6 +115,7 @@ header .headerDivTitulo #botonesDeAcceso .acces a {
   text-decoration: none;
 }
 header .headerDivTitulo #botonesDeAcceso .acces:hover {
+  transition: 3s;
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
@@ -103,169 +170,36 @@ header .headerDivTexto spam {
   font-weight: bold;
 }
 @media screen and (max-width: 600px) {
-  header {
-    justify-content: center;
-    align-items: center;
-  }
-  header .headerDivTitulo {
-    text-align: center;
-  }
   header .headerDivTitulo #botonesDeAcceso {
-    margin-top: 17%;
-    margin-left: -24%;
-    position: fixed;
-    flex-direction: column;
-    align-items: start;
-    gap: 2rem;
-  }
-  header .headerDivTitulo #botonesDeAcceso .acces {
-    width: 4.5rem;
-  }
-  header .headerDivTitulo #botonesDeAcceso .acces:hover {
-    width: 20rem;
-  }
-  header .headerDivTitulo #botonesDeAcceso #uno {
-    background-color: rgba(65, 25, 211, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #dos {
-    background-color: rgba(0, 255, 34, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres {
-    background-color: rgba(225, 255, 0, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres a {
-    color: transparent;
-  }
-  header .headerDivTitulo #botonesDeAcceso #cuatro {
-    background-color: rgba(255, 0, 0, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #uno:hover {
-    background-color: #4119d3;
-  }
-  header .headerDivTitulo #botonesDeAcceso #dos:hover {
-    background-color: #09ee28;
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres:hover {
-    background-color: #fbff00;
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres:hover a {
-    color: gray;
-  }
-  header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
-    background-color: #ff3c00;
-  }
-  header .headerDivTitulo #botonesDeAcceso #titulo1 {
-    display: none;
-  }
-  header .headerDivTitulo #botonesDeAcceso div h2 {
     display: none;
   }
   header #disp2, header #disp3, header #disp4, header #disp5 {
     display: none;
   }
-  header .headerDivDispositivos {
-    font-size: 0.75rem;
-    text-align: end;
-  }
-  header .headerDivTexto h2 {
-    font-size: 0.85rem;
-  }
-  header .headerDivTexto p {
-    font-size: 0.65rem;
-  }
-  header .headerDivImg {
-    display: none;
-  }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
-  header {
-    justify-content: center;
-    align-items: center;
+  header .headerDivTitulo #botonesDeAcceso {
+    display: none;
   }
   header #disp1, header #disp3, header #disp4, header #disp5 {
     display: none;
   }
-  header .headerDivTitulo {
-    text-align: center;
-  }
-  header .headerDivTitulo #botonesDeAcceso {
-    margin-top: 17%;
-    margin-left: -24%;
-    position: fixed;
-    flex-direction: column;
-    align-items: start;
-    gap: 2rem;
-  }
-  header .headerDivTitulo #botonesDeAcceso .acces {
-    width: 4.5rem;
-  }
-  header .headerDivTitulo #botonesDeAcceso .acces:hover {
-    width: 20rem;
-  }
-  header .headerDivTitulo #botonesDeAcceso #uno {
-    background-color: rgba(65, 25, 211, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #dos {
-    background-color: rgba(0, 255, 34, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres {
-    background-color: rgba(225, 255, 0, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres a {
-    color: transparent;
-  }
-  header .headerDivTitulo #botonesDeAcceso #cuatro {
-    background-color: rgba(255, 0, 0, 0.2588235294);
-  }
-  header .headerDivTitulo #botonesDeAcceso #uno:hover {
-    background-color: #4119d3;
-  }
-  header .headerDivTitulo #botonesDeAcceso #dos:hover {
-    background-color: #09ee28;
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres:hover {
-    background-color: #fbff00;
-  }
-  header .headerDivTitulo #botonesDeAcceso #tres:hover a {
-    color: gray;
-  }
-  header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
-    background-color: #ff3c00;
-  }
-  header .headerDivTitulo #botonesDeAcceso #titulo1 {
-    display: none;
-  }
-  header .headerDivTitulo #botonesDeAcceso div {
-    display: none;
-  }
-  header .headerDivTexto h2 {
-    font-size: 0.8rem;
-  }
-  header .headerDivTexto p {
-    font-size: 0.8rem;
-  }
-  header .headerDivImg {
-    display: none;
-  }
 }
 @media screen and (min-width: 801px) and (max-width: 1024px) {
-  header #disp1, header #disp2, header #disp4, header #disp5, header #titulo2 {
+  header .headerDivTitulo #botonesDeAcceso {
     display: none;
   }
-  header #titulo1 {
-    font-size: 2rem;
-  }
-  header h2 {
-    font-size: 1rem;
+  header #disp1, header #disp2, header #disp4, header #disp5 {
+    display: none;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-  header #disp1, header #disp2, header #disp3, header #disp5, header #titulo2 {
+  header #disp1, header #disp2, header #disp3, header #disp5, header #menu1 {
     display: none;
   }
 }
 @media screen and (min-width: 1201px) {
-  header #disp1, header #disp2, header #disp3, header #disp4, header #titulo2 {
+  header #disp1, header #disp2, header #disp3, header #disp4, header #menu1 {
     display: none;
   }
 }
