@@ -9,7 +9,7 @@ body{
     transition: 1s;
     h2{ 
         position: fixed;
-        margin-bottom: 16rem;
+        margin-bottom: 8rem;
         transition: 1s;
         color: transparent;
         margin-left: 2rem;
@@ -22,11 +22,11 @@ body{
             color: transparent;
             text-decoration: none;
         }
-        #uno{
-            margin-top: 12rem;
-        }
+        
     }
-    margin-top: 5.5rem;
+    #uno{
+        margin-top: 10rem;
+    }
     position: fixed;
     display: flex;
     flex-direction: column;

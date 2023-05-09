@@ -7,7 +7,6 @@ body {
 /*headers*/
 #menu1 {
   transition: 1s;
-  margin-top: 5.5rem;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -22,7 +21,7 @@ body {
 }
 #menu1 h2 {
   position: fixed;
-  margin-bottom: 16rem;
+  margin-bottom: 8rem;
   transition: 1s;
   color: transparent;
   margin-left: 2rem;
@@ -36,8 +35,8 @@ body {
   color: transparent;
   text-decoration: none;
 }
-#menu1 .acces #uno {
-  margin-top: 12rem;
+#menu1 #uno {
+  margin-top: 10rem;
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   #menu1 {
