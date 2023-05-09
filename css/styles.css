@@ -257,6 +257,22 @@ header .headerDivTexto spam {
 #headerSobreNos .headerDivImg {
   grid-area: img;
 }
+@media screen and (max-width: 600px) {
+  #headerSobreNos .headerDivTexto {
+    text-align: justify;
+  }
+  #headerSobreNos .headerDivImg {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #headerSobreNos .headerDivTexto {
+    text-align: justify;
+  }
+  #headerSobreNos .headerDivImg {
+    display: none;
+  }
+}
 
 /*mains*/
 .indexMain {
@@ -317,7 +333,7 @@ header .headerDivTexto spam {
   width: 30%;
 }
 @media screen and (max-width: 600px) {
-  .indexMain .Img {
+  .indexMain #headerSobreNos .headerDivImg {
     display: none;
   }
   .indexMain h3 {
