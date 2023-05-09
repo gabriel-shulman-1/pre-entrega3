@@ -16,8 +16,9 @@ body{
         transition: 2s;
         text-decoration: none;
         a{
-            transition: 2s;
+            transition: 0.2s;
             color: transparent;
+            text-decoration: none;
         }
     }
     position: fixed;
@@ -44,12 +45,13 @@ body{
     h2{
         transition: 3s;
         margin-left: 0;
-        color: transparent;
+        color: white;
     }
     .acces{
-        transition: 3s;
         a{
-            transition: 2s;
+            
+            transition: 3s;
+            transition-delay: 1s;
             color: white;
         }
     }
@@ -63,6 +65,40 @@ body{
     height: 100%;
     padding: 1rem;
     width: 14rem;
+}
+
+#iconMenu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80%;
+    margin-left: 1.7rem;
+    gap: 0.3rem;
+    align-items: center;
+    .bar{
+        background-color: black;
+        margin: 0.1rem;
+    }
+    #uno{
+        height: 0.2rem;
+        width: 0.2rem;
+        border-radius: 0.2rem;
+    }
+    #dos{
+        height: 0.4rem;
+        width: 0.2rem;
+        border-radius: 0.2rem;
+    }
+    #tres{
+        height: 0.6rem;
+        width: 0.2rem;
+        border-radius: 0.2rem;
+    }
+    #cuatro{
+        height: 0.8rem;
+        width: 0.2rem;
+        border-radius: 0.2rem;
+    }
 }
 
 header{
@@ -207,14 +243,46 @@ header{
         #disp1,#disp2,#disp3,#disp5,#menu1{
             display: none;
         }
+        .headerDivTitulo{
+            #titulo2{
+                display: none;
+            }
+            #botonesDeAcceso{
+                #titulo1{
+                    font-size: 1.8rem;
+                }
+                .acces{
+                    margin-right: 0;
+                    margin-left: 1rem;
+                }
+                div{
+                    margin-left: 1rem;
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        }
     }
 
     @media screen and (min-width:1201px){
         #disp1,#disp2,#disp3,#disp4,#menu1{
             display: none;
         }
+        .headerDivTitulo{
+            #titulo2{
+                display: none;
+            }
+            #botonesDeAcceso{
+                .acces{
+                    margin-right: 0;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
     }
-}
+
 /*header con grid*/
 #headerSobreNos{
     display: grid;

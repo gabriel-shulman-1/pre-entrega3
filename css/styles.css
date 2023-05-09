@@ -29,8 +29,9 @@ body {
   text-decoration: none;
 }
 #menu1 .acces a {
-  transition: 2s;
+  transition: 0.2s;
   color: transparent;
+  text-decoration: none;
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   #menu1 {
@@ -59,14 +60,46 @@ body {
 #menu1:hover h2 {
   transition: 3s;
   margin-left: 0;
-  color: transparent;
-}
-#menu1:hover .acces {
-  transition: 3s;
+  color: white;
 }
 #menu1:hover .acces a {
-  transition: 2s;
+  transition: 3s;
+  transition-delay: 1s;
   color: white;
+}
+
+#iconMenu {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  margin-top: 80%;
+  margin-left: 1.7rem;
+  gap: 0.3rem;
+  align-items: center;
+}
+#iconMenu .bar {
+  background-color: black;
+  margin: 0.1rem;
+}
+#iconMenu #uno {
+  height: 0.2rem;
+  width: 0.2rem;
+  border-radius: 0.2rem;
+}
+#iconMenu #dos {
+  height: 0.4rem;
+  width: 0.2rem;
+  border-radius: 0.2rem;
+}
+#iconMenu #tres {
+  height: 0.6rem;
+  width: 0.2rem;
+  border-radius: 0.2rem;
+}
+#iconMenu #cuatro {
+  height: 0.8rem;
+  width: 0.2rem;
+  border-radius: 0.2rem;
 }
 
 header {
@@ -197,13 +230,36 @@ header .headerDivTexto spam {
   header #disp1, header #disp2, header #disp3, header #disp5, header #menu1 {
     display: none;
   }
-}
-@media screen and (min-width: 1201px) {
-  header #disp1, header #disp2, header #disp3, header #disp4, header #menu1 {
+  header .headerDivTitulo #titulo2 {
     display: none;
+  }
+  header .headerDivTitulo #botonesDeAcceso #titulo1 {
+    font-size: 1.8rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso .acces {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso div {
+    margin-left: 1rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso div h2 {
+    font-size: 1.2rem;
   }
 }
 
+@media screen and (min-width: 1201px) {
+  #disp1, #disp2, #disp3, #disp4, #menu1 {
+    display: none;
+  }
+  .headerDivTitulo #titulo2 {
+    display: none;
+  }
+  .headerDivTitulo #botonesDeAcceso .acces {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+}
 /*header con grid*/
 #headerSobreNos {
   display: grid;
