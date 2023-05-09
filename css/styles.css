@@ -22,7 +22,7 @@ body {
 }
 #menu1 h2 {
   position: fixed;
-  margin-bottom: 18rem;
+  margin-bottom: 16rem;
   transition: 1s;
   color: transparent;
   margin-left: 2rem;
@@ -35,6 +35,9 @@ body {
   transition: 0.2s;
   color: transparent;
   text-decoration: none;
+}
+#menu1 .acces #uno {
+  margin-top: 12rem;
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   #menu1 {
