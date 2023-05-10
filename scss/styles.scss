@@ -9,8 +9,13 @@ body{
     transition: 1s;
     h2{ 
         position: fixed;
+<<<<<<< HEAD
         margin-bottom: 40%;
         transition: 3s;
+=======
+        margin-bottom: 8rem;
+        transition: 1s;
+>>>>>>> 9069268894479162146cf04126a053aebcc53049
         color: transparent;
         margin-left: 2rem;
     }
@@ -40,6 +45,10 @@ body{
             color: transparent;
             text-decoration: none;
         }
+        
+    }
+    #uno{
+        margin-top: 10rem;
     }
     
     position: fixed;
@@ -50,7 +59,7 @@ body{
     gap: 2rem;
     background-image: linear-gradient(to right, black 5%, transparent 95%);
     height: 100%;
-    padding: 1rem;
+    padding: 0.1rem;
     width: 1rem;
     /*Desktops*/
     @media screen and (max-width:600px){
@@ -69,7 +78,7 @@ body{
 #menu1:hover{
     transition: 1s;
     h2{
-        transition: 3s;
+        transition: 1s;
         margin-left: 0;
         color: white;
     }
@@ -97,7 +106,10 @@ body{
     width: 14rem;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9069268894479162146cf04126a053aebcc53049
 header{
     display: flex;
     flex-direction: column;
@@ -202,7 +214,11 @@ header{
     
     /*Movil devices*/
     @media screen and (max-width:600px){
+        .indexMain{
+            padding-left: 2rem;
+        }
         .headerDivTitulo{
+            text-align: center;
             #botonesDeAcceso{
                 display: none;
             }
@@ -214,6 +230,9 @@ header{
 
     /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
+        .indexMain{
+            padding-left: 2rem;
+        }
         .headerDivTitulo{
             #botonesDeAcceso{
                 display: none;
@@ -226,6 +245,9 @@ header{
 
     /*Small screens/Laptops*/
     @media screen and (min-width:801px) and (max-width:1024px){
+        .indexMain{
+            padding-left: 2rem;
+        }
         .headerDivTitulo{
             #botonesDeAcceso{
                 display: none;
@@ -234,6 +256,7 @@ header{
         #disp1,#disp2,#disp4,#disp5{
             display: none;
         }
+
     }
     /*Desktops*/
     @media screen and (min-width:1025px) and (max-width:1200px){
@@ -296,11 +319,23 @@ header{
         grid-area: img;
     }
     @media screen and (max-width:600px){
+<<<<<<< HEAD
+=======
+        .headerDivTexto{
+            text-align: justify;
+        }
+>>>>>>> 9069268894479162146cf04126a053aebcc53049
         .headerDivImg{
             display: none;
         }
     }
     @media screen and (min-width:601px) and (max-width:800px){
+<<<<<<< HEAD
+=======
+        .headerDivTexto{
+            text-align: justify;
+        }
+>>>>>>> 9069268894479162146cf04126a053aebcc53049
         .headerDivImg{
             display: none;
         }
@@ -368,8 +403,10 @@ header{
         }
     }
     @media screen and (max-width:600px){
-        .Img{
-            display: none;
+        #headerSobreNos{
+            .headerDivImg{
+                display: none;
+            }
         }
         h3{
             text-align: center;
