@@ -9,13 +9,8 @@ body{
     transition: 1s;
     h2{ 
         position: fixed;
-<<<<<<< HEAD
         margin-bottom: 40%;
         transition: 3s;
-=======
-        margin-bottom: 8rem;
-        transition: 1s;
->>>>>>> 9069268894479162146cf04126a053aebcc53049
         color: transparent;
         margin-left: 2rem;
     }
@@ -106,10 +101,6 @@ body{
     width: 14rem;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9069268894479162146cf04126a053aebcc53049
 header{
     display: flex;
     flex-direction: column;
@@ -319,23 +310,11 @@ header{
         grid-area: img;
     }
     @media screen and (max-width:600px){
-<<<<<<< HEAD
-=======
-        .headerDivTexto{
-            text-align: justify;
-        }
->>>>>>> 9069268894479162146cf04126a053aebcc53049
         .headerDivImg{
             display: none;
         }
     }
     @media screen and (min-width:601px) and (max-width:800px){
-<<<<<<< HEAD
-=======
-        .headerDivTexto{
-            text-align: justify;
-        }
->>>>>>> 9069268894479162146cf04126a053aebcc53049
         .headerDivImg{
             display: none;
         }

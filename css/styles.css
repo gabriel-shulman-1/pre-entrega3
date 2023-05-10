@@ -1,17 +1,856 @@
-/* Error: expected "{".
- *    ,
- * 13 |         margin-bottom: 40%;
- *    |                           ^
- *    '
- *   scss\styles.scss 13:27  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 13 \2502          margin-bottom: 40%;\d\a    \2502                            ^\a    \2575 \a   scss\\styles.scss 13:27  root stylesheet';
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/*headers*/
+#menu1 {
+  transition: 1s;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  background-image: linear-gradient(to right, black 5%, transparent 95%);
+  height: 100%;
+  padding: 0.1rem;
+  width: 1rem;
+  /*Desktops*/
+}
+#menu1 h2 {
+  position: fixed;
+  margin-bottom: 40%;
+  transition: 3s;
+  color: transparent;
+  margin-left: 2rem;
+}
+#menu1 #cero {
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2784313725);
+  width: 7rem;
+  height: 3rem;
+  text-align: end;
+  justify-content: center;
+  margin-left: -2rem;
+  border-radius: 2rem;
+}
+#menu1 #cero p {
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+#menu1 .acces {
+  transition: 2s;
+  text-decoration: none;
+}
+#menu1 .acces a {
+  transition: 0.2s;
+  color: transparent;
+  text-decoration: none;
+}
+#menu1 #uno {
+  margin-top: 10rem;
+}
+@media screen and (max-width: 600px) {
+  #menu1 h2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #menu1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #menu1 {
+    display: none;
+  }
+}
+
+#menu1:hover {
+  transition: 1s;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.431372549);
+  height: 100%;
+  padding: 1rem;
+  width: 14rem;
+}
+#menu1:hover h2 {
+  transition: 1s;
+  margin-left: 0;
+  color: white;
+}
+#menu1:hover #cero {
+  transition: 2s;
+  display: none;
+}
+#menu1:hover .acces {
+  display: block;
+}
+#menu1:hover .acces a {
+  transition: 3s;
+  transition-delay: 1s;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, black 75%, white);
+  color: beige;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  /*Movil devices*/
+  /*Ipad/tablets*/
+  /*Small screens/Laptops*/
+  /*Desktops*/
+}
+header .headerDivTitulo {
+  text-align: left;
+  font-weight: bold;
+}
+header .headerDivTitulo #botonesDeAcceso {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+header .headerDivTitulo #botonesDeAcceso #titulo1 {
+  margin-right: auto;
+}
+header .headerDivTitulo #botonesDeAcceso .acces {
+  transition: 3s;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: 3s;
+  width: 1rem;
+  height: 3rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+header .headerDivTitulo #botonesDeAcceso .acces a {
+  color: transparent;
+  transition: 0.5s;
+  text-decoration: none;
+}
+header .headerDivTitulo #botonesDeAcceso .acces:hover {
+  transition: 3s;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: 1s;
+  width: 20%;
+  height: 3rem;
+  border-radius: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+header .headerDivTitulo #botonesDeAcceso .acces:hover a {
+  color: transparent;
+  transition: 1s;
+  color: white;
+  transition-delay: 1s;
+}
+header .headerDivTitulo #botonesDeAcceso #uno:hover {
+  background-color: #4119d3;
+}
+header .headerDivTitulo #botonesDeAcceso #dos:hover {
+  background-color: #09ee28;
+}
+header .headerDivTitulo #botonesDeAcceso #tres:hover {
+  background-color: #fbff00;
+}
+header .headerDivTitulo #botonesDeAcceso #tres:hover a {
+  color: gray;
+}
+header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
+  background-color: #ff3c00;
+}
+header .headerDivDispositivos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+header .headerDivDispositivos p {
+  margin-left: 1rem;
+}
+header .headerDivTexto {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+header .headerDivTexto h2 {
+  font-size: medium;
+  margin-block-end: 0;
+}
+header .headerDivTexto spam {
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  header .indexMain {
+    padding-left: 2rem;
+  }
+  header .headerDivTitulo {
+    text-align: center;
+  }
+  header .headerDivTitulo #botonesDeAcceso {
+    display: none;
+  }
+  header #disp2, header #disp3, header #disp4, header #disp5 {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  header .indexMain {
+    padding-left: 2rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso {
+    display: none;
+  }
+  header #disp1, header #disp3, header #disp4, header #disp5 {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  header .indexMain {
+    padding-left: 2rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso {
+    display: none;
+  }
+  header #disp1, header #disp2, header #disp4, header #disp5 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  header #disp1, header #disp2, header #disp3, header #disp5, header #menu1 {
+    display: none;
+  }
+  header .headerDivTitulo #titulo2 {
+    display: none;
+  }
+  header .headerDivTitulo #botonesDeAcceso #titulo1 {
+    font-size: 1.8rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso .acces {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso div {
+    margin-left: 1rem;
+  }
+  header .headerDivTitulo #botonesDeAcceso div h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  #disp1, #disp2, #disp3, #disp4, #menu1 {
+    display: none;
+  }
+  .headerDivTitulo #titulo2 {
+    display: none;
+  }
+  .headerDivTitulo #botonesDeAcceso .acces {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+}
+/*header con grid*/
+#headerSobreNos {
+  display: grid;
+  grid-template-areas: "titulo img" "texto img";
+}
+#headerSobreNos .headerDivTitulo {
+  grid-area: titulo;
+}
+#headerSobreNos .headerDivTexto {
+  grid-area: texto;
+}
+#headerSobreNos .headerDivImg {
+  grid-area: img;
+}
+@media screen and (max-width: 600px) {
+  #headerSobreNos .headerDivImg {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #headerSobreNos .headerDivImg {
+    display: none;
+  }
+}
+
+/*mains*/
+.indexMain {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.indexMain #navIndex .divNavIndexUno {
+  display: flex;
+  flex-direction: row;
+}
+.indexMain #navIndex .divNavIndexUno div {
+  width: 70%;
+  margin: 1rem;
+}
+.indexMain #navIndex .divNavIndexUno div spam {
+  font-weight: bold;
+}
+.indexMain #navIndex .divNavIndexUno div div {
+  margin: 1rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.indexMain #navIndex .divNavIndexUno .imgIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.indexMain #navIndex .divNavIndexDos {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.indexMain #navIndex .divNavIndexDos div {
+  width: 70%;
+  margin: 1rem;
+}
+.indexMain #navIndex .divNavIndexDos div spam {
+  font-weight: bold;
+}
+.indexMain #navIndex .divNavIndexDos div div {
+  margin: 1rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.indexMain #navIndex .divNavIndexDos .imgIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .indexMain #headerSobreNos .headerDivImg {
+    display: none;
+  }
+  .indexMain h3 {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .indexMain #navIndex {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .indexMain #navIndex .divNavIndexUno {
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexMain #navIndex .divNavIndexUno div {
+    width: auto;
+  }
+  .indexMain #navIndex .divNavIndexUno div {
+    width: auto;
+  }
+  .indexMain #navIndex .divNavIndexDos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexMain #navIndex .divNavIndexDos div {
+    width: auto;
+  }
+  .indexMain #navIndex .divNavIndexDos div {
+    width: auto;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .indexMain .Img {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .indexMain .Img-p {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .indexMain .Img-p {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .indexMain .Img-p {
+    display: none;
+  }
+}
+
+/*servicios*/
+.serviciosMain {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 1rem;
+  gap: 1rem;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "d9 d9 d9";
+}
+.serviciosMain .divServMain {
+  align-items: center;
+  margin: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.serviciosMain #uno {
+  grid-area: d1;
+  text-align: right;
+}
+.serviciosMain #dos {
+  grid-area: d2;
+}
+.serviciosMain #tres {
+  grid-area: d3;
+}
+.serviciosMain #cuatro {
+  grid-area: d4;
+}
+.serviciosMain #cinco {
+  grid-area: d5;
+  text-align: right;
+}
+.serviciosMain #seis {
+  grid-area: d6;
+}
+.serviciosMain #siete {
+  grid-area: d7;
+}
+.serviciosMain #ocho {
+  grid-area: d8;
+}
+.serviciosMain #nueve {
+  grid-area: d9;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+.serviciosMain #nueve a {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .serviciosMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviciosMain h3 {
+    text-align: center;
+  }
+  .serviciosMain p {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .serviciosMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviciosMain h3 {
+    text-align: center;
+  }
+  .serviciosMain p {
+    text-align: justify;
+  }
+}
+/*Trabajos*/
+.trabajosMain {
+  display: grid;
+  margin: 1rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "divUno divDos divDos" "divTres divTres divCuatro" "volver volver volver";
+}
+.trabajosMain .divMainTrabajos {
+  margin: 1rem;
+}
+.trabajosMain #divUno {
+  grid-area: divUno;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  margin-right: 0;
+}
+.trabajosMain #divDos {
+  grid-area: divDos;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trabajosMain #divTres {
+  grid-area: divTres;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trabajosMain #divCuatro {
+  grid-area: divCuatro;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 0;
+}
+.trabajosMain #Volver {
+  grid-area: volver;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+.trabajosMain #Volver a {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .trabajosMain {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "divUno" "divDos" "divCuatro" "divTres" "volver";
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos h2 {
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos iframe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .trabajosMain {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "divUno" "divDos" "divCuatro" "divTres" "volver";
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos h2 {
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos iframe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .trabajosMain {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "divUno" "divDos" "divCuatro" "divTres" "volver";
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos h2 {
+    text-align: center;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos p {
+    text-align: justify;
+  }
+  .trabajosMain .divMainTrabajos iframe {
+    width: 100%;
+  }
+}
+/*solicitud de trabajos*/
+.nuevoClienteMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem;
+}
+.nuevoClienteMain legend {
+  text-align: center;
+}
+.nuevoClienteMain #labels {
+  text-align: end;
+  margin-bottom: 2rem;
+}
+.nuevoClienteMain #labels div {
+  padding: 1rem;
+}
+.nuevoClienteMain form fieldset {
+  margin: 2rem;
+}
+.nuevoClienteMain form fieldset legend {
+  margin: 0.8rem;
+  padding: 2rem;
+}
+.nuevoClienteMain form fieldset div {
+  margin: 1.5rem;
+  background-image: radial-gradient(#8fb2ff, white 73%);
+}
+.nuevoClienteMain #detalles {
+  margin: 1.5rem;
+  text-align: start;
+}
+.nuevoClienteMain #detalles label {
+  align-items: start;
+}
+.nuevoClienteMain #detalles div {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.nuevoClienteMain #detalles div #det {
+  width: 100%;
+  height: 5rem;
+}
+.nuevoClienteMain #botones {
+  width: auto;
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+.nuevoClienteMain #botones div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nuevoClienteMain #botones div a {
+  color: white;
+  text-decoration: none;
+  width: 10rem;
+}
+@media screen and (max-width: 600px) {
+  .nuevoClienteMain #labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain #labels div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nuevoClienteMain form fieldset legend {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .nuevoClienteMain #botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .nuevoClienteMain #labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain #labels div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuevoClienteMain form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nuevoClienteMain form fieldset legend {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .nuevoClienteMain #botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+/*sobre nosotros*/
+.sobreNosotrosMain {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "div1 div1 div2" "div3 div4 div4" "div5 div5 div6" "volver volver volver";
+}
+.sobreNosotrosMain .divNosMain {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobreNosotrosMain div {
+  justify-content: center;
+}
+.sobreNosotrosMain #div1 {
+  grid-area: div1;
+  text-align: end;
+}
+.sobreNosotrosMain #div2 {
+  grid-area: div2;
+}
+.sobreNosotrosMain #div3 {
+  grid-area: div3;
+}
+.sobreNosotrosMain #div4 {
+  grid-area: div4;
+  text-align: left;
+}
+.sobreNosotrosMain #div5 {
+  grid-area: div5;
+  text-align: right;
+}
+.sobreNosotrosMain #div6 {
+  grid-area: div6;
+}
+.sobreNosotrosMain #volver1 {
+  grid-area: volver;
+  width: 100%;
+}
+.sobreNosotrosMain #volver1 a {
+  width: 10rem;
+}
+@media screen and (max-width: 600px) {
+  .sobreNosotrosMain {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "div1" "div2" "div4" "div3" "div5" "div6" "volver";
+  }
+  .sobreNosotrosMain .divNosMain {
+    padding: 0;
+  }
+  .sobreNosotrosMain .divNosMain p {
+    text-align: justify;
+  }
+  .sobreNosotrosMain .divNosMain p {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .sobreNosotrosMain {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "div1" "div2" "div4" "div3" "div5" "div6" "volver";
+  }
+  .sobreNosotrosMain .divNosMain {
+    padding: 0;
+  }
+  .sobreNosotrosMain .divNosMain p {
+    text-align: justify;
+  }
+  .sobreNosotrosMain .divNosMain p {
+    text-align: justify;
+  }
+}
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-image: linear-gradient(to top, #9b9b9b, white);
+  color: black;
+  /*
+  @media screen and (min-width:801px) and (max-width:1024px)
+  @media screen and (min-width:1025px) and (max-width:1200px)
+  @media screen and (min-width:1201px)*/
+}
+footer .footerContacto {
+  padding-left: 0.5rem;
+  margin: 0.5rem;
+  align-items: center;
+  font-weight: bold;
+}
+footer .footerLista {
+  margin: 0.5rem;
+  list-style: circle;
+  padding-right: 1rem;
+}
+footer .footerLista ul {
+  padding-inline-start: 1rem;
+}
+footer .footerTexto {
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  text-align: left;
+}
+footer .footerTexto spam {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*otros*/
+img {
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
