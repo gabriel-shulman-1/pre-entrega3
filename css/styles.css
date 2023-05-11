@@ -125,47 +125,29 @@ header .headerDivTitulo #botonesDeAcceso {
   flex-direction: row;
   align-items: center;
   margin-bottom: 1rem;
+  gap: 0.6rem;
 }
 header .headerDivTitulo #botonesDeAcceso #titulo1 {
   margin-right: auto;
 }
 header .headerDivTitulo #botonesDeAcceso .acces {
-  transition: 3s;
+  border-color: white;
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  transition: 3s;
-  width: 1rem;
+  transition: 1s;
+  width: auto;
   height: 3rem;
-  background-color: #ffffff;
-  border-radius: 2rem;
+  border-radius: 1rem;
   justify-content: center;
   text-align: center;
+  padding: 0.2rem;
 }
 header .headerDivTitulo #botonesDeAcceso .acces a {
-  color: transparent;
-  transition: 0.5s;
-  text-decoration: none;
-}
-header .headerDivTitulo #botonesDeAcceso .acces:hover {
-  transition: 3s;
-  display: flex;
-  flex-direction: column;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  transition: 1s;
-  width: 20%;
-  height: 3rem;
-  border-radius: 2rem;
-  justify-content: center;
-  text-align: center;
-}
-header .headerDivTitulo #botonesDeAcceso .acces:hover a {
   color: transparent;
   transition: 1s;
   color: white;
   transition-delay: 1s;
+  text-decoration: none;
 }
 header .headerDivTitulo #botonesDeAcceso #uno:hover {
   background-color: #4119d3;
@@ -182,6 +164,9 @@ header .headerDivTitulo #botonesDeAcceso #tres:hover a {
 header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
   background-color: #ff3c00;
 }
+header .headerDivTitulo #botonesDeAcceso div h2 {
+  font-size: 1.5rem;
+}
 header .headerDivDispositivos {
   display: flex;
   flex-direction: row;
@@ -190,7 +175,7 @@ header .headerDivDispositivos {
   width: 100%;
 }
 header .headerDivDispositivos p {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 header .headerDivTexto {
   text-align: left;
@@ -253,11 +238,14 @@ header .headerDivTexto spam {
     margin-right: 0;
     margin-left: 1rem;
   }
+  header .headerDivTitulo #botonesDeAcceso .acces a {
+    font-size: 1rem;
+  }
   header .headerDivTitulo #botonesDeAcceso div {
     margin-left: 1rem;
   }
   header .headerDivTitulo #botonesDeAcceso div h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
