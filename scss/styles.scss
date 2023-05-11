@@ -792,37 +792,36 @@ header{
     grid-template-rows: repeat(4,auto);
     grid-template-areas: 
     "div1 div1 div2"
-    "div3 div4 div4"
+    "div3 div3 div4"
     "div5 div5 div6"
     "volver volver volver";
     .divNosMain{
         padding-top: 2rem;
         padding-bottom: 2rem;
-        margin: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    #div1{
+    #uno{
+        padding-left: 1rem;
         grid-area: div1;
-        text-align: left;
     }
-    #div2{
+    #dos{
         grid-area: div2;
     }
-    #div3{
+    #tres{
+        padding-left: 1rem;
         grid-area: div3;
     }
-    #div4{
+    #cuatro{
         grid-area: div4;
-        text-align: left;
     }
-    #div5{
+    #cinco{
+        padding-left: 1rem;
         grid-area: div5;
-        text-align: right;
     }
-    #div6{
+    #seis{
         grid-area: div6;
     }
     #volver1{
