@@ -194,7 +194,7 @@ header .headerDivDispositivos p {
 }
 header .headerDivTexto {
   text-align: left;
-  padding-bottom: 2rem;
+  margin: 1rem;
 }
 header .headerDivTexto h2 {
   font-size: medium;
