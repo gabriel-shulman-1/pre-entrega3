@@ -7,11 +7,12 @@ body {
 /*headers*/
 #menu1 {
   transition: 1s;
-  position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
+  text-align: none;
+  position: fixed;
   gap: 2rem;
   background-image: linear-gradient(to right, black 5%, transparent 95%);
   height: 100%;
@@ -27,15 +28,16 @@ body {
   margin-left: 2rem;
 }
 #menu1 #cero {
-  transition: 2s;
   display: flex;
   flex-direction: column;
+  align-items: none;
+  justify-content: center;
+  text-align: end;
+  transition: 2s;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2784313725);
   width: 7rem;
   height: 3rem;
-  text-align: end;
-  justify-content: center;
   margin-left: -2rem;
   border-radius: 2rem;
 }
@@ -74,11 +76,12 @@ body {
 
 #menu1:hover {
   transition: 1s;
-  position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
+  text-align: none;
+  position: fixed;
   gap: 2rem;
   background-color: rgba(0, 0, 0, 0.431372549);
   height: 100%;
@@ -106,6 +109,9 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  text-align: none;
   background-image: linear-gradient(to bottom, black 47%, transparent 98%);
   color: beige;
   padding: 1rem;
@@ -124,21 +130,24 @@ header .headerDivTitulo #botonesDeAcceso {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: none;
+  text-align: none;
   gap: 0.6rem;
 }
 header .headerDivTitulo #botonesDeAcceso #titulo1 {
   margin-right: auto;
 }
 header .headerDivTitulo #botonesDeAcceso .acces {
-  border-color: white;
   display: flex;
   flex-direction: column;
+  align-items: none;
+  justify-content: center;
+  text-align: center;
+  border-color: white;
   transition: 1s;
   width: auto;
   height: 1.5rem;
   border-radius: 1rem;
-  justify-content: center;
-  text-align: center;
   padding: 0.2rem;
 }
 header .headerDivTitulo #botonesDeAcceso .acces a {
@@ -166,8 +175,10 @@ header .headerDivTitulo #botonesDeAcceso div h2 {
 header .headerDivDispositivos {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-items: none;
   justify-content: flex-end;
+  text-align: none;
+  flex-wrap: wrap;
   width: 100%;
 }
 header .headerDivDispositivos p {
@@ -261,6 +272,9 @@ header .headerDivTexto spam {
 /*header con grid*/
 #headerSobreNos {
   display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
   grid-template-areas: "titulo img" "texto img";
 }
 #headerSobreNos .headerDivTitulo {
@@ -285,15 +299,21 @@ header .headerDivTexto spam {
 
 /*mains*/
 .indexMain {
-  padding-left: 1.5rem;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  text-align: none;
+  padding-left: 1.5rem;
+  padding: 1rem;
 }
 .indexMain .divNavIndex {
-  transition: 2s;
   display: flex;
   flex-direction: row;
+  align-items: none;
+  justify-content: none;
+  text-align: none;
+  transition: 2s;
   border-color: rgb(95, 95, 95);
   border-style: solid;
   border-width: 0.15rem;
@@ -308,18 +328,21 @@ header .headerDivTexto spam {
   font-weight: bold;
 }
 .indexMain .divNavIndex div div {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: center;
+  text-align: none;
   margin: 1rem;
   width: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   margin-top: 3rem;
 }
 .indexMain .divNavIndex .imgIndex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 30%;
 }
 .indexMain #uno {
@@ -372,12 +395,13 @@ header .headerDivTexto spam {
 /*servicios*/
 .serviciosMain {
   display: grid;
+  gap: 1rem;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "d9 d9 d9";
   align-items: center;
   justify-items: center;
   margin: 1rem;
-  gap: 1rem;
-  grid-template-columns: 35% 30% 35%;
-  grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "d9 d9 d9";
 }
 .serviciosMain .divServMain {
   align-items: center;
@@ -426,6 +450,9 @@ header .headerDivTexto spam {
   .serviciosMain {
     display: flex;
     flex-direction: column;
+    align-items: none;
+    justify-content: none;
+    text-align: none;
   }
   .serviciosMain h3 {
     text-align: center;
@@ -438,6 +465,9 @@ header .headerDivTexto spam {
   .serviciosMain {
     display: flex;
     flex-direction: column;
+    align-items: none;
+    justify-content: none;
+    text-align: none;
   }
   .serviciosMain h3 {
     text-align: center;
@@ -450,21 +480,21 @@ header .headerDivTexto spam {
 /*Trabajos*/
 .trabajosMain {
   display: grid;
-  margin: 1rem;
   gap: 1rem;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "divUno divDos divDos" "divTres divTres divCuatro" "volver volver volver";
+  margin: 1rem;
 }
 .trabajosMain .divMainTrabajos {
   margin: 1rem;
 }
 .trabajosMain #divUno {
   grid-area: divUno;
-  text-align: right;
   display: flex;
   flex-direction: column;
   align-items: right;
+  text-align: right;
   margin-right: 0;
 }
 .trabajosMain #divDos {
@@ -472,19 +502,21 @@ header .headerDivTexto spam {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .trabajosMain #divTres {
   grid-area: divTres;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .trabajosMain #divCuatro {
   grid-area: divCuatro;
-  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: left;
+  text-align: left;
   margin-left: 0;
 }
 .trabajosMain #Volver {
@@ -500,6 +532,8 @@ header .headerDivTexto spam {
 }
 @media screen and (max-width: 600px) {
   .trabajosMain {
+    display: grid;
+    gap: 1rem;
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "divUno" "divDos" "divCuatro" "divTres" "volver";
@@ -520,6 +554,8 @@ header .headerDivTexto spam {
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .trabajosMain {
+    display: grid;
+    gap: 1rem;
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "divUno" "divDos" "divCuatro" "divTres" "volver";
@@ -540,6 +576,8 @@ header .headerDivTexto spam {
 }
 @media screen and (min-width: 801px) and (max-width: 1024px) {
   .trabajosMain {
+    display: grid;
+    gap: 1rem;
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "divUno" "divDos" "divCuatro" "divTres" "volver";
@@ -564,6 +602,7 @@ header .headerDivTexto spam {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: none;
   text-align: center;
   margin: 1.5rem;
 }
@@ -604,17 +643,21 @@ header .headerDivTexto spam {
   height: 5rem;
 }
 .nuevoClienteMain #botones {
-  width: auto;
-  margin: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: none;
+  text-align: center;
+  width: auto;
+  margin: 2rem;
   gap: 5rem;
 }
 .nuevoClienteMain #botones div {
   display: flex;
   flex-direction: column;
+  align-items: none;
   justify-content: center;
+  text-align: center;
 }
 .nuevoClienteMain #botones div a {
   color: white;
@@ -626,16 +669,21 @@ header .headerDivTexto spam {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
+    text-align: none;
   }
   .nuevoClienteMain #labels div form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
+    text-align: none;
   }
   .nuevoClienteMain form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
     text-align: center;
   }
   .nuevoClienteMain form fieldset legend {
@@ -647,6 +695,7 @@ header .headerDivTexto spam {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
     text-align: center;
     gap: 2rem;
   }
@@ -656,16 +705,21 @@ header .headerDivTexto spam {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
+    text-align: none;
   }
   .nuevoClienteMain #labels div form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
+    text-align: none;
   }
   .nuevoClienteMain form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
     text-align: center;
   }
   .nuevoClienteMain form fieldset legend {
@@ -677,6 +731,7 @@ header .headerDivTexto spam {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
     text-align: center;
     gap: 2rem;
   }
@@ -685,17 +740,19 @@ header .headerDivTexto spam {
 /*sobre nosotros*/
 .sobreNosotrosMain {
   display: grid;
+  gap: 0;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "div1 div1 div2" "div3 div3 div4" "div5 div5 div6" "volver volver volver";
 }
 .sobreNosotrosMain .divNosMain {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .sobreNosotrosMain #uno {
   padding-left: 1rem;
@@ -730,8 +787,11 @@ header .headerDivTexto spam {
 }
 @media screen and (max-width: 600px) {
   .sobreNosotrosMain {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(7, auto);
-    grid-template-areas: "div1" "div2" "div4" "div3" "div5" "div6" "volver";
+    grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6" "volver";
   }
   .sobreNosotrosMain .divNosMain {
     padding: 0;
@@ -745,7 +805,10 @@ header .headerDivTexto spam {
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .sobreNosotrosMain {
-    grid-template-rows: repeat(7, auto);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7auto);
     grid-template-areas: "div1" "div2" "div4" "div3" "div5" "div6" "volver";
   }
   .sobreNosotrosMain #headerSobreNos .headerDivImg {
@@ -767,6 +830,8 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: none;
+  text-align: none;
   background-image: linear-gradient(to top, #9b9b9b, white);
   color: black;
 }
@@ -798,6 +863,8 @@ footer .footerTexto spam {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
+    text-align: none;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -805,6 +872,8 @@ footer .footerTexto spam {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
+    text-align: none;
   }
 }
 

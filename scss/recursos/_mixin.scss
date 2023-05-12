@@ -5,3 +5,26 @@
     margin-bottom: $margin-bottom;
     width: $width;
 }
+@mixin divTrabajos($grid-area,$display,$flex-direction,$align-items,$text-align){
+    grid-area: $grid-area;
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    text-align: $text-align;
+}
+@mixin nGrid($display,$gap,$grid-template-columns,$grid-template-rows){
+    display: $display;
+    gap: $gap;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+}
+@mixin templateAreas($grid-template-areas){
+    grid-template-areas: $grid-template-areas;
+}
+@mixin constructorFlex($display,$flex-direction,$align-items,$justify-content,$text-align){
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    text-align: $text-align;
+}
