@@ -106,7 +106,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to bottom, black 75%, white);
+  background-image: linear-gradient(to bottom, black 47%, transparent 98%);
   color: beige;
   padding: 1rem;
   padding-bottom: 2rem;
@@ -149,19 +149,16 @@ header .headerDivTitulo #botonesDeAcceso .acces a {
   font-size: 1rem;
 }
 header .headerDivTitulo #botonesDeAcceso #uno:hover {
-  background-color: #4119d3;
+  background-color: rgba(65, 25, 211, 0.5490196078);
 }
 header .headerDivTitulo #botonesDeAcceso #dos:hover {
-  background-color: #09ee28;
+  background-color: rgba(9, 238, 40, 0.3803921569);
 }
 header .headerDivTitulo #botonesDeAcceso #tres:hover {
-  background-color: #fbff00;
-}
-header .headerDivTitulo #botonesDeAcceso #tres:hover a {
-  color: gray;
+  background-color: rgba(251, 255, 0, 0.8);
 }
 header .headerDivTitulo #botonesDeAcceso #cuatro:hover {
-  background-color: #ff3c00;
+  background-color: rgba(255, 60, 0, 0.6196078431);
 }
 header .headerDivTitulo #botonesDeAcceso div h2 {
   font-size: 1.5rem;
@@ -297,7 +294,7 @@ header .headerDivTexto spam {
   transition: 2s;
   display: flex;
   flex-direction: row;
-  border-color: rgb(147, 147, 147);
+  border-color: rgb(95, 95, 95);
   border-style: solid;
   border-width: 0.15rem;
   border-radius: 1rem;
@@ -332,16 +329,16 @@ header .headerDivTexto spam {
   transition: 1s;
 }
 .indexMain #uno:hover {
-  border-color: rgba(186, 113, 255, 0.2784313725);
+  border-color: rgba(65, 25, 211, 0.5490196078);
 }
 .indexMain #dos:hover {
-  border-color: rgba(139, 255, 113, 0.2784313725);
+  border-color: rgba(9, 238, 40, 0.3803921569);
 }
 .indexMain #tres:hover {
-  border-color: rgba(238, 255, 113, 0.2784313725);
+  border-color: rgba(251, 255, 0, 0.8);
 }
 .indexMain #cuatro:hover {
-  border-color: rgba(255, 113, 113, 0.2784313725);
+  border-color: rgba(255, 60, 0, 0.6196078431);
 }
 @media screen and (max-width: 600px) {
   .indexMain .divNavIndex div {
@@ -416,6 +413,7 @@ header .headerDivTexto spam {
 }
 .serviciosMain #nueve {
   grid-area: d9;
+  margin: 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 10rem;
@@ -448,6 +446,7 @@ header .headerDivTexto spam {
     text-align: justify;
   }
 }
+
 /*Trabajos*/
 .trabajosMain {
   display: grid;
@@ -559,6 +558,7 @@ header .headerDivTexto spam {
     width: 100%;
   }
 }
+
 /*solicitud de trabajos*/
 .nuevoClienteMain {
   display: flex;
@@ -681,6 +681,7 @@ header .headerDivTexto spam {
     gap: 2rem;
   }
 }
+
 /*sobre nosotros*/
 .sobreNosotrosMain {
   display: grid;
@@ -719,6 +720,9 @@ header .headerDivTexto spam {
 }
 .sobreNosotrosMain #volver1 {
   grid-area: volver;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 100%;
 }
 .sobreNosotrosMain #volver1 a {
@@ -757,6 +761,7 @@ header .headerDivTexto spam {
     text-align: justify;
   }
 }
+
 /*footer*/
 footer {
   display: flex;
@@ -764,10 +769,6 @@ footer {
   align-items: flex-start;
   background-image: linear-gradient(to top, #9b9b9b, white);
   color: black;
-  /*
-  @media screen and (min-width:801px) and (max-width:1024px)
-  @media screen and (min-width:1025px) and (max-width:1200px)
-  @media screen and (min-width:1201px)*/
 }
 footer .footerContacto {
   padding-left: 0.5rem;

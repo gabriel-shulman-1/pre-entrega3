@@ -1,0 +1,7 @@
+@mixin volver1($grid-area,$margin,$margin-top,$margin-bottom,$width){
+    grid-area: $grid-area;
+    margin: $margin;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    width: $width;
+}

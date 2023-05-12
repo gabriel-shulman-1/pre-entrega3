@@ -3,6 +3,8 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+@import "recursos/variables.scss";
+@import "recursos/_mixin.scss";
 
 /*headers*/
 #menu1{
@@ -45,7 +47,6 @@ body{
     #uno{
         margin-top: 10rem;
     }
-    
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -56,6 +57,7 @@ body{
     height: 100%;
     padding: 0.1rem;
     width: 1rem;
+
     /*Desktops*/
     @media screen and (max-width:600px){
         h2{display: none;}
@@ -104,7 +106,7 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, black 75%, white);
+    background-image: $fondoHeader;
     color: beige;
     padding: 1rem;
     padding-bottom: 2rem;
@@ -144,19 +146,16 @@ header{
                 
             }
             #uno:hover{
-                background-color: #4119d3;
+                background-color: $nuestroServicio;
             }
             #dos:hover{
-                background-color: #09ee28;
+                background-color: $nTrabajosHechos;
             }
             #tres:hover{
-                background-color: #fbff00;
-                a{
-                    color: gray;
-                }
+                background-color: $solicitarServicio;
             }
             #cuatro:hover{
-                background-color: #ff3c00;
+                background-color: $sobreNos;
             }
             div{
                 h2{
@@ -321,7 +320,7 @@ header{
         transition: 2s;
         display: flex;
         flex-direction: row;
-        border-color: rgb(147, 147, 147);
+        border-color: $gris1;
         border-style: solid;
         border-width: 0.15rem;
         border-radius: 1rem;
@@ -354,29 +353,20 @@ header{
     #uno{
         margin-top: 1rem;
     }
-    #dos{
-
-    }
-    #tres{
-
-    }
-    #cuatro{
-
-    }
     .divNavIndex:hover{
         transition: 1s;
     }
     #uno:hover{
-        border-color: #ba71ff47;
+        border-color: $nuestroServicio;
     }
     #dos:hover{
-        border-color: #8bff7147;
+        border-color: $nTrabajosHechos;
     }
     #tres:hover{
-        border-color: #eeff7147;
+        border-color: $solicitarServicio;
     }
     #cuatro:hover{
-        border-color: #ff717147;
+        border-color: $sobreNos;
     }
 
     @media screen and (max-width:600px){
@@ -461,15 +451,13 @@ header{
             grid-area: d8;
         }
     #nueve{
-            grid-area: d9;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            width: 10rem;
+        @include volver1(d9,0,2rem,2rem,10rem);
             a{
                 color: white;
                 text-decoration: none;
             }
         }
+
     @media screen and (max-width:600px){
         display: flex;
         flex-direction: column;
@@ -479,7 +467,7 @@ header{
         p{
             text-align: justify;
         }
-        }
+    }
 
     @media screen and (min-width:601px) and (max-width:800px){
         display: flex;
@@ -490,16 +478,6 @@ header{
         p{
             text-align: justify;
         }
-        }
-        
-    @media screen and (min-width:801px) and (max-width:1024px){
-
-    }
-    @media screen and (min-width:1025px) and (max-width:1200px){
-
-    }
-    @media screen and (min-width:1201px){
-
     }
 }
 
@@ -547,11 +525,7 @@ header{
         margin-left: 0;
     }
     #Volver{
-        grid-area: volver;
-        margin: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 10rem;
+        @include volver1(volver,auto,2rem,2rem,10rem);
             a{
                 color: white;
                 text-decoration: none;
@@ -632,12 +606,6 @@ header{
                 width: 100%;
             }
         }
-    }
-    @media screen and (min-width:1025px) and (max-width:1200px){
-
-    }
-    @media screen and (min-width:1201px){
-
     }
 }
 /*solicitud de trabajos*/
@@ -774,15 +742,6 @@ header{
             gap: 2rem;
         }
     }
-    @media screen and (min-width:801px) and (max-width:1024px){
-
-    }
-    @media screen and (min-width:1025px) and (max-width:1200px){
-
-    }
-    @media screen and (min-width:1201px){
-
-    }
 }
 /*sobre nosotros*/
 
@@ -825,8 +784,9 @@ header{
         grid-area: div6;
     }
     #volver1{
-        grid-area: volver;
-        width: 100%;
+        @include volver1 (volver,0,0,0,100%);
+        //grid-area: volver;
+        //width: 100%;
         a{
             width: 10rem;
         }
@@ -878,15 +838,6 @@ header{
                 }
             }
     }
-    @media screen and (min-width:801px) and (max-width:1024px){
-
-    }
-    @media screen and (min-width:1025px) and (max-width:1200px){
-
-    }
-    @media screen and (min-width:1201px){
-
-    }
 }
 
 /*footer*/
@@ -894,7 +845,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    background-image: linear-gradient(to top, #9b9b9b, white);
+    background-image: $footer;
     color: black;
     .footerContacto{
         padding-left: 0.5rem;
@@ -929,10 +880,6 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    /*
-    @media screen and (min-width:801px) and (max-width:1024px)
-    @media screen and (min-width:1025px) and (max-width:1200px)
-    @media screen and (min-width:1201px)*/
 }
 /*otros*/
 img{
