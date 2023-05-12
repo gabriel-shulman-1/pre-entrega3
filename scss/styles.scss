@@ -5,6 +5,7 @@ body{
 }
 @import "recursos/variables.scss";
 @import "recursos/_mixin.scss";
+@import "recursos/efectos.scss";
 
 /*headers*/
 #menu1{
@@ -131,7 +132,7 @@ header{
                 
             }
             #uno:hover{
-                background-color: $nuestroServicio;
+                background-color: nth($nuestroServicioLista,1);
             }
             #dos:hover{
                 background-color: $nTrabajosHechos;
@@ -697,7 +698,7 @@ header{
                 display: none;
             }
         }
-        @include nGrid(grid,1rem,100%,repeat(7auto));
+        @include nGrid(grid,1rem,100%,repeat(7,auto));
         @include templateAreas("div1" "div2" "div4" "div3" "div5" "div6" "volver");
             .divNosMain{
                 padding: 0;
@@ -749,4 +750,7 @@ footer{
 /*otros*/
 img{
     border-radius: 1rem;
+}
+@keyframes fx1{
+    
 }

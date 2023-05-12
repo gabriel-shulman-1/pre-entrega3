@@ -1,0 +1,26 @@
+@import "variables.scss";
+@import "listas.scss";
+
+@keyframes fxnuestroServicio{
+    14%{
+        background-color: nth($nuestroServicioLista,1);
+    }
+    28%{
+        background-color: nth($nuestroServicioLista,2);
+    }
+    42%{
+        background-color: nth($nuestroServicioLista,3);
+    }
+    56%{
+        background-color: nth($nuestroServicioLista,4);
+    }
+    70%{
+        background-color: nth($nuestroServicioLista,3);
+    }
+    84%{
+        background-color: nth($nuestroServicioLista,2);
+    }
+    98%{
+        background-color: nth($nuestroServicioLista,1);
+    }
+}
