@@ -4,7 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-/*headers*/
 #menu1 {
   transition: 1s;
   display: flex;
@@ -879,11 +878,8 @@ footer .footerTexto spam {
   }
 }
 
-/*otros*/
 img {
   border-radius: 1rem;
 }
-
-@keyframes fx1 {}
 
 /*# sourceMappingURL=styles.css.map */

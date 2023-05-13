@@ -5,8 +5,6 @@ body{
 }
 @import "recursos/variables.scss";
 @import "recursos/_mixin.scss";
-
-/*headers*/
 #menu1{
     transition: 1s;
     h2{ 
@@ -39,7 +37,6 @@ body{
             color: transparent;
             text-decoration: none;
         }
-        
     }
     #uno{
         margin-top: 10rem;
@@ -51,21 +48,17 @@ body{
     height: 100%;
     padding: 0.1rem;
     width: 1rem;
-
     /*Desktops*/
     @media screen and (max-width:600px){
         h2{display: none;}
     }
-
     @media screen and (min-width:1025px) and (max-width:1200px){
             display: none;
     }
-
     @media screen and (min-width:1201px){
             display: none;
     }
 }
-
 #menu1:hover{
     transition: 1s;
     h2{
@@ -93,7 +86,6 @@ body{
     padding: 1rem;
     width: 14rem;
 }
-
 header{
     @include constructorFlex(flex,column,none,none,none);
     background-image: $fondoHeader;
@@ -101,7 +93,6 @@ header{
     padding: 1rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
-
     .headerDivTitulo{
         text-align: left;
         font-weight: bold;
@@ -111,7 +102,6 @@ header{
             #titulo1{
                 margin-right: auto;
             }
-    
             .acces{
                 @include constructorFlex(flex,column,none,center,center);
                 border-color: white;
@@ -120,7 +110,6 @@ header{
                 height: 1.5rem;
                 border-radius: 1rem;
                 padding: 0.2rem;
-
                 a{
                     color: transparent;
                     transition: 1s;
@@ -128,7 +117,6 @@ header{
                     text-decoration: none;
                     font-size: 1rem;
                 }
-                
             }
             #uno:hover{
                 background-color: $nuestroServicios;
@@ -149,7 +137,6 @@ header{
             }
         }
     }
-    
     .headerDivDispositivos{
         @include constructorFlex(flex,row,none,flex-end,none);
         flex-wrap: wrap;
@@ -159,7 +146,6 @@ header{
             margin-bottom: 0;
         }
     }
-    
     .headerDivTexto{
         text-align: left;
         margin: 1rem;
@@ -171,7 +157,6 @@ header{
             font-weight: bold;
         }
     }
-    
     /*Movil devices*/
     @media screen and (max-width:600px){
         .indexMain{
@@ -187,7 +172,6 @@ header{
             display: none;
         }
     }
-
     /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         .indexMain{
@@ -202,7 +186,6 @@ header{
             display: none;
         }
     }
-
     /*Small screens/Laptops*/
     @media screen and (min-width:801px) and (max-width:1024px){
         .indexMain{
@@ -216,7 +199,6 @@ header{
         #disp1,#disp2,#disp4,#disp5{
             display: none;
         }
-
     }
     /*Desktops*/
     @media screen and (min-width:1025px) and (max-width:1200px){
@@ -242,13 +224,12 @@ header{
                     margin-left: 1rem;
                     h2{
                         font-size: 1rem;
+                        }
                     }
                 }
             }
         }
-        }
     }
-
     @media screen and (min-width:1201px){
         #disp1,#disp2,#disp3,#disp4,#menu1{
             display: none;
@@ -265,7 +246,6 @@ header{
             }
         }
     }
-
 /*header con grid*/
 #headerSobreNos{
     @include nGrid(grid,0,repeat(2,auto),repeat(2,auto));
@@ -290,7 +270,6 @@ header{
         }
     }
 }
-
 /*mains*/
 .indexMain{
     @include constructorFlex(flex,column,none,none,none);
@@ -304,7 +283,6 @@ header{
         border-width: 0.15rem;
         border-radius: 1rem;
         margin-bottom: 1rem;
-        
         div{ 
             width: 70%;
             margin: 1rem;
@@ -322,7 +300,6 @@ header{
             @include constructorFlex(flex,column,center,center,center);
             width: 30%;
         }
-        
     }
     #uno{
         margin-top: 1rem;
@@ -352,9 +329,7 @@ header{
                 display: none;
             }
         }
-        
     }
-
     @media screen and (min-width:601px) and (max-width:800px){
         .Img{
             display: none;
@@ -376,7 +351,6 @@ header{
         }
     }
 }
-
 /*servicios*/
 .serviciosMain{
     @include nGrid(grid,1rem,35% 30% 35%, repeat(5,auto));
@@ -384,7 +358,6 @@ header{
     align-items: center;
     justify-items: center;
     margin: 1rem;
-
     .divServMain{
         align-items: center;
         margin: 1rem;
@@ -424,7 +397,6 @@ header{
                 text-decoration: none;
             }
         }
-
     @media screen and (max-width:600px){
         @include constructorFlex(flex,column,none,none,none);
         h3{
@@ -434,7 +406,6 @@ header{
             text-align: justify;
         }
     }
-
     @media screen and (min-width:601px) and (max-width:800px){
         @include constructorFlex(flex,column,none,none,none);
         h3{
@@ -445,7 +416,6 @@ header{
         }
     }
 }
-
 /*Trabajos*/
 .trabajosMain{
     @include nGrid(grid,1rem,repeat(3,auto),repeat(3,auto));
@@ -475,7 +445,6 @@ header{
                 text-decoration: none;
             }
     }
-    
     @media screen and (max-width:600px){
         @include nGrid(grid,1rem,100%,repeat(5,auto));
         @include templateAreas("divUno" "divDos" "divCuatro" "divTres" "volver");
@@ -535,7 +504,6 @@ header{
     }
 }
 /*solicitud de trabajos*/
-
 .nuevoClienteMain{
     @include constructorFlex(flex,column,center,none,center);
     margin: 1.5rem;
@@ -598,8 +566,7 @@ header{
                 form{
                     @include constructorFlex(flex,column,center,none,none);
                 }
-            }
-                   
+            }   
         }
         form{
             @include constructorFlex(flex,column,center,none,center);
@@ -642,7 +609,6 @@ header{
     }
 }
 /*sobre nosotros*/
-
 .sobreNosotrosMain{
     @include nGrid(grid,0,repeat(3,auto),repeat(4,auto));
     @include templateAreas("div1 div1 div2" "div3 div3 div4" "div5 div5 div6" "volver volver volver");
@@ -712,7 +678,6 @@ header{
             }
     }
 }
-
 /*footer*/
 footer{
     @include constructorFlex(flex,row,flex-start,none,none);
@@ -748,10 +713,6 @@ footer{
         @include constructorFlex(flex,column,center,none,none);
     }
 }
-/*otros*/
 img{
     border-radius: 1rem;
-}
-@keyframes fx1{
-    
 }
