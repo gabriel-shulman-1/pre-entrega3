@@ -625,6 +625,47 @@ header{
             gap: 2rem;
         }
     }
+    @media screen and (min-width:801px) and (max-width:1024px){
+        .nuevoClienteMain{
+            header{
+                .headerDivTitulo{
+                    #botonesDeAcceso{
+                        #titulo1{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:1025px) and (max-width:1200px){
+        .nuevoClienteMain{
+            header{
+                .headerDivTitulo{
+                    #botonesDeAcceso{
+                        #titulo1{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*Large screens/TV*/
+    @media screen and (min-width:1201px){
+        .nuevoClienteMain{
+            header{
+                .headerDivTitulo{
+                    #botonesDeAcceso{
+                        #titulo1{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 /*sobre nosotros*/
 .sobreNosotrosMain{

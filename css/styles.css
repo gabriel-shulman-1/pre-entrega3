@@ -624,6 +624,7 @@ header .headerDivTexto spam {
   margin: 1.5rem;
   /*Mobile devices*/
   /*Ipad/tablets*/
+  /*Large screens/TV*/
 }
 .nuevoClienteMain legend {
   text-align: center;
@@ -753,6 +754,21 @@ header .headerDivTexto spam {
     justify-content: none;
     text-align: center;
     gap: 2rem;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .nuevoClienteMain .nuevoClienteMain header .headerDivTitulo #botonesDeAcceso #titulo1 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .nuevoClienteMain .nuevoClienteMain header .headerDivTitulo #botonesDeAcceso #titulo1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .nuevoClienteMain .nuevoClienteMain header .headerDivTitulo #botonesDeAcceso #titulo1 {
+    font-size: 1.7rem;
   }
 }
 
