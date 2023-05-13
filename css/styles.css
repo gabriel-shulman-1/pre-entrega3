@@ -1,9 +1,11 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*menu pantallas pequeñas*/
 #menu1 {
   transition: 1s;
   display: flex;
@@ -17,7 +19,9 @@ body {
   height: 100%;
   padding: 0.1rem;
   width: 1rem;
-  /*Desktops*/
+  /*Mobile devices*/
+  /*Small screens/Laptops*/
+  /*large screens/TV*/
 }
 #menu1 h2 {
   position: fixed;
@@ -105,6 +109,7 @@ body {
   color: white;
 }
 
+/*header*/
 header {
   display: flex;
   flex-direction: column;
@@ -116,7 +121,7 @@ header {
   padding: 1rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
-  /*Movil devices*/
+  /*Mobile devices*/
   /*Ipad/tablets*/
   /*Small screens/Laptops*/
   /*Desktops*/
@@ -256,6 +261,7 @@ header .headerDivTexto spam {
   }
 }
 
+/*Large screens/TV*/
 @media screen and (min-width: 1201px) {
   #disp1, #disp2, #disp3, #disp4, #menu1 {
     display: none;
@@ -275,6 +281,8 @@ header .headerDivTexto spam {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "titulo img" "texto img";
+  /*Mobile devices*/
+  /*Ipad/tablets*/
 }
 #headerSobreNos .headerDivTitulo {
   grid-area: titulo;
@@ -305,6 +313,11 @@ header .headerDivTexto spam {
   text-align: none;
   padding-left: 1.5rem;
   padding: 1rem;
+  /*Mobile devices*/
+  /*Ipad/Tablet*/
+  /*Small screens/Laptops*/
+  /*desktops*/
+  /*Large screens/TV*/
 }
 .indexMain .divNavIndex {
   display: flex;
@@ -401,6 +414,8 @@ header .headerDivTexto spam {
   align-items: center;
   justify-items: center;
   margin: 1rem;
+  /*Mobile devices*/
+  /*Ipad/tablets*/
 }
 .serviciosMain .divServMain {
   align-items: center;
@@ -484,6 +499,9 @@ header .headerDivTexto spam {
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "divUno divDos divDos" "divTres divTres divCuatro" "volver volver volver";
   margin: 1rem;
+  /*Mobile devices*/
+  /*Ipad/tablets*/
+  /*Small screens/Laptops*/
 }
 .trabajosMain .divMainTrabajos {
   margin: 1rem;
@@ -604,6 +622,8 @@ header .headerDivTexto spam {
   justify-content: none;
   text-align: center;
   margin: 1.5rem;
+  /*Mobile devices*/
+  /*Ipad/tablets*/
 }
 .nuevoClienteMain legend {
   text-align: center;
@@ -743,6 +763,8 @@ header .headerDivTexto spam {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "div1 div1 div2" "div3 div3 div4" "div5 div5 div6" "volver volver volver";
+  /*Mobile devices*/
+  /*Ipad/tablets*/
 }
 .sobreNosotrosMain .divNosMain {
   display: flex;
@@ -835,6 +857,8 @@ footer {
   text-align: none;
   background-image: linear-gradient(to top, #9b9b9b, white);
   color: black;
+  /*Mobile devices*/
+  /*Ipad/tablets*/
 }
 footer .footerContacto {
   padding-left: 0.5rem;

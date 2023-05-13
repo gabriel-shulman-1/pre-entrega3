@@ -5,6 +5,7 @@ body{
 }
 @import "recursos/variables.scss";
 @import "recursos/_mixin.scss";
+/*menu pantallas pequeñas*/
 #menu1{
     transition: 1s;
     h2{ 
@@ -48,13 +49,15 @@ body{
     height: 100%;
     padding: 0.1rem;
     width: 1rem;
-    /*Desktops*/
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         h2{display: none;}
     }
+    /*Small screens/Laptops*/
     @media screen and (min-width:1025px) and (max-width:1200px){
             display: none;
     }
+    /*large screens/TV*/
     @media screen and (min-width:1201px){
             display: none;
     }
@@ -86,6 +89,7 @@ body{
     padding: 1rem;
     width: 14rem;
 }
+/*header*/
 header{
     @include constructorFlex(flex,column,none,none,none);
     background-image: $fondoHeader;
@@ -157,7 +161,7 @@ header{
             font-weight: bold;
         }
     }
-    /*Movil devices*/
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         .indexMain{
             padding-left: 2rem;
@@ -230,6 +234,7 @@ header{
             }
         }
     }
+    /*Large screens/TV*/
     @media screen and (min-width:1201px){
         #disp1,#disp2,#disp3,#disp4,#menu1{
             display: none;
@@ -259,11 +264,13 @@ header{
     .headerDivImg{
         grid-area: img;
     }
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         .headerDivImg{
             display: none;
         }
     }
+    /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         .headerDivImg{
             display: none;
@@ -319,7 +326,7 @@ header{
     #cuatro:hover{
         border-color: $sobreNos;
     }
-
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         .divNavIndex{
             div{
@@ -330,21 +337,25 @@ header{
             }
         }
     }
+    /*Ipad/Tablet*/
     @media screen and (min-width:601px) and (max-width:800px){
         .Img{
             display: none;
         }
     }
+    /*Small screens/Laptops*/
     @media screen and (min-width:801px) and (max-width:1024px){
         .Img{
             display: none;
         }
     }
+    /*desktops*/
     @media screen and (min-width:1025px) and (max-width:1200px){
         .Img-p{
             display: none;
         }
     }
+    /*Large screens/TV*/
     @media screen and (min-width:1201px){
         .Img-p{
             display: none;
@@ -397,6 +408,7 @@ header{
                 text-decoration: none;
             }
         }
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         @include constructorFlex(flex,column,none,none,none);
         h3{
@@ -406,6 +418,7 @@ header{
             text-align: justify;
         }
     }
+    /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         @include constructorFlex(flex,column,none,none,none);
         h3{
@@ -445,6 +458,7 @@ header{
                 text-decoration: none;
             }
     }
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         @include nGrid(grid,1rem,100%,repeat(5,auto));
         @include templateAreas("divUno" "divDos" "divCuatro" "divTres" "volver");
@@ -464,6 +478,7 @@ header{
             }
         }
     }
+    /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         @include nGrid(grid,1rem,100%,repeat(5,auto));
         @include templateAreas("divUno" "divDos" "divCuatro" "divTres" "volver");
@@ -483,6 +498,7 @@ header{
             }
         }
     }
+    /*Small screens/Laptops*/
     @media screen and (min-width:801px) and (max-width:1024px){
         @include nGrid(grid,1rem,100%,repeat(5,auto));
         @include templateAreas("divUno" "divDos" "divCuatro" "divTres" "volver");
@@ -559,6 +575,7 @@ header{
             }
         }
     }
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         #labels{
             @include constructorFlex(flex,column,center,none,none);
@@ -583,6 +600,7 @@ header{
             gap: 2rem;
         } 
     }
+    /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         #labels{
             @include constructorFlex(flex,column,center,none,none);
@@ -644,6 +662,7 @@ header{
             width: 10rem;
         }
     }
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         padding: 1rem;
         @include nGrid(grid,1rem,100%,repeat(7,auto));
@@ -658,6 +677,7 @@ header{
             }
         }
     }
+    /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         #headerSobreNos{
             .headerDivImg{
@@ -706,9 +726,11 @@ footer{
             font-weight: bold;
         }
     }
+    /*Mobile devices*/
     @media screen and (max-width:600px){
         @include constructorFlex(flex,column,center,none,none);
     }
+    /*Ipad/tablets*/
     @media screen and (min-width:601px) and (max-width:800px){
         @include constructorFlex(flex,column,center,none,none);
     }
