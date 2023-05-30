@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /*menu pantallas pequeñas*/
@@ -788,25 +789,21 @@ header .headerDivTexto spam {
   align-items: center;
   justify-content: center;
   text-align: none;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1rem;
 }
 .sobreNosotrosMain #uno {
-  padding-left: 1rem;
   grid-area: div1;
 }
 .sobreNosotrosMain #dos {
   grid-area: div2;
 }
 .sobreNosotrosMain #tres {
-  padding-left: 1rem;
   grid-area: div3;
 }
 .sobreNosotrosMain #cuatro {
   grid-area: div4;
 }
 .sobreNosotrosMain #cinco {
-  padding-left: 1rem;
   grid-area: div5;
 }
 .sobreNosotrosMain #seis {
@@ -871,8 +868,9 @@ footer {
   align-items: flex-start;
   justify-content: none;
   text-align: none;
-  background-image: linear-gradient(to top, #9b9b9b, white);
-  color: black;
+  background-color: #373737;
+  color: white;
+  padding: 1rem;
   /*Mobile devices*/
   /*Ipad/tablets*/
 }
@@ -891,9 +889,9 @@ footer .footerLista ul {
   padding-inline-start: 1rem;
 }
 footer .footerTexto {
-  margin: 0.5rem;
+  margin: 0.6rem;
   font-size: 0.8rem;
-  text-align: left;
+  text-align: justify;
 }
 footer .footerTexto spam {
   font-size: 0.95rem;

@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 @import "recursos/variables.scss";
 @import "recursos/_mixin.scss";
@@ -673,25 +674,21 @@ header{
     @include templateAreas("div1 div1 div2" "div3 div3 div4" "div5 div5 div6" "volver volver volver");
     .divNosMain{
         @include constructorFlex(flex,column,center,center,none);
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 1rem;
     }
     #uno{
-        padding-left: 1rem;
         grid-area: div1;
     }
     #dos{
         grid-area: div2;
     }
     #tres{
-        padding-left: 1rem;
         grid-area: div3;
     }
     #cuatro{
         grid-area: div4;
     }
     #cinco{
-        padding-left: 1rem;
         grid-area: div5;
     }
     #seis{
@@ -742,8 +739,9 @@ header{
 /*footer*/
 footer{
     @include constructorFlex(flex,row,flex-start,none,none);
-    background-image: $footer;
-    color: black;
+    background-color: #373737;
+    color: white;
+    padding: 1rem;
     .footerContacto{
         padding-left: 0.5rem;
         margin: 0.5rem;
@@ -759,9 +757,9 @@ footer{
         }
     }
     .footerTexto{
-        margin: 0.5rem;
+        margin: 0.6rem;
         font-size: 0.8rem;
-        text-align: left;
+        text-align: justify;
         spam{
             font-size: 0.95rem;
             font-weight: bold;
