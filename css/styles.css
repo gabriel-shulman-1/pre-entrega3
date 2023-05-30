@@ -117,7 +117,7 @@ header {
   align-items: none;
   justify-content: none;
   text-align: none;
-  background-image: linear-gradient(to bottom, black 47%, transparent 98%);
+  background-image: linear-gradient(to bottom, black 58%, transparent 98%);
   color: beige;
   padding: 1rem;
   padding-bottom: 2rem;
@@ -141,6 +141,9 @@ header .headerDivTitulo #botonesDeAcceso {
 }
 header .headerDivTitulo #botonesDeAcceso #titulo1 {
   margin-right: auto;
+}
+header .headerDivTitulo #botonesDeAcceso .logoUno {
+  margin-right: 0.5rem;
 }
 header .headerDivTitulo #botonesDeAcceso .acces {
   display: flex;
@@ -207,6 +210,7 @@ header .headerDivTexto spam {
   }
   header .headerDivTitulo {
     text-align: center;
+    gap: 1rem;
   }
   header .headerDivTitulo #botonesDeAcceso {
     display: none;
@@ -219,6 +223,13 @@ header .headerDivTexto spam {
   header .indexMain {
     padding-left: 2rem;
   }
+  header .headerDivTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
   header .headerDivTitulo #botonesDeAcceso {
     display: none;
   }
@@ -230,6 +241,13 @@ header .headerDivTexto spam {
   header .indexMain {
     padding-left: 2rem;
   }
+  header .headerDivTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
   header .headerDivTitulo #botonesDeAcceso {
     display: none;
   }
@@ -239,6 +257,9 @@ header .headerDivTexto spam {
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   header #disp1, header #disp2, header #disp3, header #disp5, header #menu1 {
+    display: none;
+  }
+  header .headerDivTitulo .logoDos {
     display: none;
   }
   header .headerDivTitulo #titulo2 {
@@ -265,6 +286,9 @@ header .headerDivTexto spam {
 /*Large screens/TV*/
 @media screen and (min-width: 1201px) {
   #disp1, #disp2, #disp3, #disp4, #menu1 {
+    display: none;
+  }
+  .headerDivTitulo .logoDos {
     display: none;
   }
   .headerDivTitulo #titulo2 {

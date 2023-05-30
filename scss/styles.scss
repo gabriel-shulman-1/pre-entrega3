@@ -107,6 +107,9 @@ header{
             #titulo1{
                 margin-right: auto;
             }
+            .logoUno{
+                margin-right: 0.5rem;
+            }
             .acces{
                 @include constructorFlex(flex,column,none,center,center);
                 border-color: white;
@@ -169,6 +172,7 @@ header{
         }
         .headerDivTitulo{
             text-align: center;
+            gap: 1rem;
             #botonesDeAcceso{
                 display: none;
             }
@@ -183,6 +187,11 @@ header{
             padding-left: 2rem;
         }
         .headerDivTitulo{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
             #botonesDeAcceso{
                 display: none;
             }
@@ -197,6 +206,11 @@ header{
             padding-left: 2rem;
         }
         .headerDivTitulo{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
             #botonesDeAcceso{
                 display: none;
             }
@@ -211,6 +225,9 @@ header{
             display: none;
         }
         .headerDivTitulo{
+            .logoDos{
+                display: none;
+            }
             #titulo2{
                 display: none;
             }
@@ -241,6 +258,9 @@ header{
             display: none;
         }
         .headerDivTitulo{
+            .logoDos{
+                display: none;
+            }
             #titulo2{
                 display: none;
             }
