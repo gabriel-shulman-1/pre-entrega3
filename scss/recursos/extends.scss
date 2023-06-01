@@ -1,0 +1,38 @@
+@import "./variables.scss";
+%textoCenter{
+    text-align: center;
+}
+%textoJustify{
+    text-align: justify;
+}
+%noDisplay{
+    display: none;
+}
+%textoComun{
+    transition: 1s;
+    color: white;
+    text-decoration: none;
+}
+%botonVolver{
+    grid-area: volver;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+%nuestrosServicios{
+    background-color: $nuestroServicios;
+}
+%trabajoHecho{
+    background-color: $trabajosHechos;
+}
+%solicitarServicio{
+    background-color: $solicitarServicio;
+}
+%sobreNos{
+    background-color: $sobreNos;
+}

@@ -6,6 +6,32 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+footer .footerTexto, .nuevoClienteMain legend {
+  text-align: center;
+}
+
+#menu1:hover #cero {
+  display: none;
+}
+
+header .headerDivTitulo #botonesDeAcceso .acces a, #menu1:hover .acces a, #menu1 .acces a {
+  transition: 1s;
+  color: white;
+  text-decoration: none;
+}
+
+.sobreNosotrosMain #volver1, .nuevoClienteMain #botones div, .trabajosMain #Volver, .serviciosMain #nueve {
+  grid-area: volver;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+.sobreNosotrosMain #volver1 a, .nuevoClienteMain #botones div a, .trabajosMain #Volver a, .serviciosMain #nueve a {
+  color: white;
+  text-decoration: none;
+}
+
 /*menu pantallas pequeñas*/
 #menu1 {
   transition: 1s;
@@ -14,12 +40,12 @@ body {
   align-items: flex-start;
   justify-content: center;
   text-align: none;
-  position: fixed;
-  gap: 2rem;
-  background-image: linear-gradient(to right, black 5%, transparent 95%);
-  height: 100%;
-  padding: 0.1rem;
   width: 1rem;
+  height: 100%;
+  gap: 2rem;
+  position: fixed;
+  background-image: linear-gradient(to right, black 5%, transparent 95%);
+  padding: 0.1rem;
   /*Mobile devices*/
   /*Small screens/Laptops*/
   /*large screens/TV*/
@@ -37,11 +63,12 @@ body {
   align-items: none;
   justify-content: center;
   text-align: end;
+  width: 7rem;
+  height: 3rem;
+  gap: 0;
   transition: 2s;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2784313725);
-  width: 7rem;
-  height: 3rem;
   margin-left: -2rem;
   border-radius: 2rem;
 }
@@ -57,7 +84,6 @@ body {
 #menu1 .acces a {
   transition: 0.2s;
   color: transparent;
-  text-decoration: none;
 }
 #menu1 #uno {
   margin-top: 10rem;
@@ -85,12 +111,12 @@ body {
   align-items: flex-start;
   justify-content: center;
   text-align: none;
-  position: fixed;
-  gap: 2rem;
-  background-color: rgba(0, 0, 0, 0.431372549);
-  height: 100%;
-  padding: 1rem;
   width: 14rem;
+  height: 100%;
+  gap: 2rem;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.431372549);
+  padding: 1rem;
 }
 #menu1:hover h2 {
   transition: 1s;
@@ -99,7 +125,6 @@ body {
 }
 #menu1:hover #cero {
   transition: 2s;
-  display: none;
 }
 #menu1:hover .acces {
   display: block;
@@ -107,7 +132,6 @@ body {
 #menu1:hover .acces a {
   transition: 3s;
   transition-delay: 1s;
-  color: white;
 }
 
 /*header*/
@@ -148,18 +172,15 @@ header .headerDivTitulo #botonesDeAcceso .acces {
   align-items: none;
   justify-content: center;
   text-align: center;
-  border-color: white;
-  transition: 1s;
   width: auto;
   height: 1.5rem;
+  gap: 0;
+  border-color: white;
+  transition: 1s;
   border-radius: 1rem;
   padding: 0.2rem;
 }
 header .headerDivTitulo #botonesDeAcceso .acces a {
-  color: transparent;
-  transition: 1s;
-  color: white;
-  text-decoration: none;
   font-size: 1rem;
 }
 header .headerDivTitulo #botonesDeAcceso #uno:hover {
@@ -411,7 +432,7 @@ header .headerDivTexto spam {
   gap: 1rem;
   grid-template-columns: 35% 30% 35%;
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "d9 d9 d9";
+  grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "volver volver volver";
   align-items: center;
   justify-items: center;
   margin: 1rem;
@@ -449,17 +470,6 @@ header .headerDivTexto spam {
 }
 .serviciosMain #ocho {
   grid-area: d8;
-}
-.serviciosMain #nueve {
-  grid-area: d9;
-  margin: 0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 10rem;
-}
-.serviciosMain #nueve a {
-  color: white;
-  text-decoration: none;
 }
 @media screen and (max-width: 600px) {
   .serviciosMain {
@@ -538,15 +548,8 @@ header .headerDivTexto spam {
   margin-left: 0;
 }
 .trabajosMain #Volver {
-  grid-area: volver;
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 10rem;
-}
-.trabajosMain #Volver a {
-  color: white;
-  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 600px) {
   .trabajosMain {
@@ -627,9 +630,6 @@ header .headerDivTexto spam {
   /*Ipad/tablets*/
   /*Large screens/TV*/
 }
-.nuevoClienteMain legend {
-  text-align: center;
-}
 .nuevoClienteMain #labels {
   text-align: end;
   margin-bottom: 2rem;
@@ -662,28 +662,16 @@ header .headerDivTexto spam {
 .nuevoClienteMain #detalles div #det {
   width: 100%;
   height: 5rem;
+  gap: 0;
 }
 .nuevoClienteMain #botones {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: none;
+  justify-content: center;
   text-align: center;
   width: auto;
   margin: 2rem;
-  gap: 5rem;
-}
-.nuevoClienteMain #botones div {
-  display: flex;
-  flex-direction: column;
-  align-items: none;
-  justify-content: center;
-  text-align: center;
-}
-.nuevoClienteMain #botones div a {
-  color: white;
-  text-decoration: none;
-  width: 10rem;
 }
 @media screen and (max-width: 600px) {
   .nuevoClienteMain #labels {
@@ -810,14 +798,8 @@ header .headerDivTexto spam {
   grid-area: div6;
 }
 .sobreNosotrosMain #volver1 {
-  grid-area: volver;
-  margin: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 100%;
-}
-.sobreNosotrosMain #volver1 a {
-  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 600px) {
   .sobreNosotrosMain {
@@ -891,7 +873,6 @@ footer .footerLista ul {
 footer .footerTexto {
   margin: 0.6rem;
   font-size: 0.8rem;
-  text-align: justify;
 }
 footer .footerTexto spam {
   font-size: 0.95rem;
