@@ -322,22 +322,22 @@ header{
             width: 30%;
         }
     }
-    #uno{
+    .divNavIndex:nth-child(1){
         margin-top: 1rem;
     }
     .divNavIndex:hover{
         transition: 1s;
     }
-    #uno:hover{
+    .divNavIndex:hover:nth-child(1){
         border-color: $nuestroServicios;
     }
-    #dos:hover{
+    .divNavIndex:hover:nth-child(2){
         border-color: $trabajosHechos;
     }
-    #tres:hover{
+    .divNavIndex:hover:nth-child(3){
         border-color: $solicitarServicio;
     }
-    #cuatro:hover{
+    .divNavIndex:hover:nth-child(4){
         border-color: $sobreNos;
     }
     /*Mobile devices*/
@@ -389,33 +389,33 @@ header{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         }
-    #uno{
+        .divServMain:nth-child(1){
             grid-area: d1;
             text-align: right;
         }
-    #dos{
+        .divServMain:nth-child(2){
             grid-area: d2;
         }
-    #tres{
+        .divServMain:nth-child(3){
             grid-area: d3;
         }
-    #cuatro{
+        .divServMain:nth-child(4){
             grid-area: d4;
         }
-    #cinco{
+        .divServMain:nth-child(5){
             grid-area: d5;
             text-align: right;
         }
-    #seis{
+        .divServMain:nth-child(6){
             grid-area: d6;
         }
-    #siete{
+        .divServMain:nth-child(7){
             grid-area: d7;
         }
-    #ocho{
+        .divServMain:nth-child(8){
             grid-area: d8;
         }
-    #nueve{
+        .divServMain:nth-child(9){
         @extend %botonVolver;
         }
     /*Mobile devices*/
@@ -447,17 +447,17 @@ header{
     .divMainTrabajos{
         margin: 1rem;   
     }
-    #divUno{
+    .divMainTrabajos:nth-child(1){
         @include divTrabajos(divUno,flex,column,right,right);
         margin-right: 0;
     }
-    #divDos{
+    .divMainTrabajos:nth-child(2){
         @include divTrabajos(divDos,flex,column,center,center);
     }
-    #divTres{
+    .divMainTrabajos:nth-child(3){
         @include divTrabajos(divTres,flex,column,center,center);
     }
-    #divCuatro{
+    .divMainTrabajos:nth-child(4){
         @include divTrabajos(divCuatro,flex,column,left,left);
         margin-left: 0;
     }
@@ -676,25 +676,25 @@ header{
         @include constructorFlex(flex,column,center,center,none);
         padding: 1rem;
     }
-    #uno{
+    .divNosMain:nth-child(1){
         grid-area: div1;
     }
-    #dos{
+    .divNosMain:nth-child(2){
         grid-area: div2;
     }
-    #tres{
+    .divNosMain:nth-child(3){
         grid-area: div3;
     }
-    #cuatro{
+    .divNosMain:nth-child(4){
         grid-area: div4;
     }
-    #cinco{
+    .divNosMain:nth-child(5){
         grid-area: div5;
     }
-    #seis{
+    .divNosMain:nth-child(6){
         grid-area: div6;
     }
-    #volver1{
+    .divNosMain:nth-child(7){
         margin-left: auto;
         margin-right: auto;
         @extend %botonVolver;
@@ -738,7 +738,7 @@ header{
 /*footer*/
 footer{
     @include constructorFlex(flex,row,flex-start,none,none);
-    background-color: #373737;
+    background-color: $footerN;
     color: white;
     padding: 1rem;
     .footerContacto{

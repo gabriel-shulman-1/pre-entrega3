@@ -20,14 +20,14 @@ header .headerDivTitulo #botonesDeAcceso .acces a, #menu1:hover .acces a, #menu1
   text-decoration: none;
 }
 
-.sobreNosotrosMain #volver1, .nuevoClienteMain #botones div, .trabajosMain #Volver, .serviciosMain #nueve {
+.sobreNosotrosMain .divNosMain:nth-child(7), .nuevoClienteMain #botones div, .trabajosMain #Volver, .serviciosMain .divServMain:nth-child(9) {
   grid-area: volver;
   margin: 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 10rem;
 }
-.sobreNosotrosMain #volver1 a, .nuevoClienteMain #botones div a, .trabajosMain #Volver a, .serviciosMain #nueve a {
+.sobreNosotrosMain .divNosMain:nth-child(7) a, .nuevoClienteMain #botones div a, .trabajosMain #Volver a, .serviciosMain .divServMain:nth-child(9) a {
   color: white;
   text-decoration: none;
 }
@@ -403,22 +403,22 @@ header .headerDivTexto spam {
   text-align: center;
   width: 30%;
 }
-.indexMain #uno {
+.indexMain .divNavIndex:nth-child(1) {
   margin-top: 1rem;
 }
 .indexMain .divNavIndex:hover {
   transition: 1s;
 }
-.indexMain #uno:hover {
+.indexMain .divNavIndex:hover:nth-child(1) {
   border-color: rgba(65, 25, 211, 0.5490196078);
 }
-.indexMain #dos:hover {
+.indexMain .divNavIndex:hover:nth-child(2) {
   border-color: rgba(9, 238, 40, 0.3803921569);
 }
-.indexMain #tres:hover {
+.indexMain .divNavIndex:hover:nth-child(3) {
   border-color: rgba(251, 255, 0, 0.8);
 }
-.indexMain #cuatro:hover {
+.indexMain .divNavIndex:hover:nth-child(4) {
   border-color: rgba(255, 60, 0, 0.6196078431);
 }
 @media screen and (max-width: 600px) {
@@ -469,30 +469,30 @@ header .headerDivTexto spam {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.serviciosMain #uno {
+.serviciosMain .divServMain:nth-child(1) {
   grid-area: d1;
   text-align: right;
 }
-.serviciosMain #dos {
+.serviciosMain .divServMain:nth-child(2) {
   grid-area: d2;
 }
-.serviciosMain #tres {
+.serviciosMain .divServMain:nth-child(3) {
   grid-area: d3;
 }
-.serviciosMain #cuatro {
+.serviciosMain .divServMain:nth-child(4) {
   grid-area: d4;
 }
-.serviciosMain #cinco {
+.serviciosMain .divServMain:nth-child(5) {
   grid-area: d5;
   text-align: right;
 }
-.serviciosMain #seis {
+.serviciosMain .divServMain:nth-child(6) {
   grid-area: d6;
 }
-.serviciosMain #siete {
+.serviciosMain .divServMain:nth-child(7) {
   grid-area: d7;
 }
-.serviciosMain #ocho {
+.serviciosMain .divServMain:nth-child(8) {
   grid-area: d8;
 }
 @media screen and (max-width: 600px) {
@@ -541,7 +541,7 @@ header .headerDivTexto spam {
 .trabajosMain .divMainTrabajos {
   margin: 1rem;
 }
-.trabajosMain #divUno {
+.trabajosMain .divMainTrabajos:nth-child(1) {
   grid-area: divUno;
   display: flex;
   flex-direction: column;
@@ -549,21 +549,21 @@ header .headerDivTexto spam {
   text-align: right;
   margin-right: 0;
 }
-.trabajosMain #divDos {
+.trabajosMain .divMainTrabajos:nth-child(2) {
   grid-area: divDos;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.trabajosMain #divTres {
+.trabajosMain .divMainTrabajos:nth-child(3) {
   grid-area: divTres;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.trabajosMain #divCuatro {
+.trabajosMain .divMainTrabajos:nth-child(4) {
   grid-area: divCuatro;
   display: flex;
   flex-direction: column;
@@ -803,25 +803,25 @@ header .headerDivTexto spam {
   text-align: none;
   padding: 1rem;
 }
-.sobreNosotrosMain #uno {
+.sobreNosotrosMain .divNosMain:nth-child(1) {
   grid-area: div1;
 }
-.sobreNosotrosMain #dos {
+.sobreNosotrosMain .divNosMain:nth-child(2) {
   grid-area: div2;
 }
-.sobreNosotrosMain #tres {
+.sobreNosotrosMain .divNosMain:nth-child(3) {
   grid-area: div3;
 }
-.sobreNosotrosMain #cuatro {
+.sobreNosotrosMain .divNosMain:nth-child(4) {
   grid-area: div4;
 }
-.sobreNosotrosMain #cinco {
+.sobreNosotrosMain .divNosMain:nth-child(5) {
   grid-area: div5;
 }
-.sobreNosotrosMain #seis {
+.sobreNosotrosMain .divNosMain:nth-child(6) {
   grid-area: div6;
 }
-.sobreNosotrosMain #volver1 {
+.sobreNosotrosMain .divNosMain:nth-child(7) {
   margin-left: auto;
   margin-right: auto;
 }
