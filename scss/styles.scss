@@ -170,8 +170,10 @@ header{
                 display: none;
             }
         }
-        #disp2,#disp3,#disp4,#disp5{
-            display: none;
+        .headerDivDispositivos{
+            .headerDivDispositivos:nth-child(2),.headerDivDispositivos:nth-child(3),.headerDivDispositivos:nth-child(4),.headerDivDispositivos:nth-child(5){
+                display: none;
+            }
         }
     }
     /*Ipad/tablets*/
@@ -189,7 +191,7 @@ header{
                 display: none;
             }
         }
-        #disp1,#disp3,#disp4,#disp5{
+        .headerDivDispositivos:nth-child(1),.headerDivDispositivos:nth-child(3),.headerDivDispositivos:nth-child(4),.headerDivDispositivos:nth-child(5){
             display: none;
         }
     }
@@ -208,14 +210,18 @@ header{
                 display: none;
             }
         }
-        #disp1,#disp2,#disp4,#disp5{
-            display: none;
+        .headerDivDispositivos{
+            .headerDivDispositivos:nth-child(1),.headerDivDispositivos:nth-child(2),.headerDivDispositivos:nth-child(4),.headerDivDispositivos:nth-child(5){
+                display: none;
+            }
         }
     }
     /*Desktops*/
     @media screen and (min-width:1025px) and (max-width:1200px){
-        #disp1,#disp2,#disp3,#disp5,#menu1{
-            display: none;
+        .headerDivDispositivos{
+            .headerDivDispositivos:nth-child(1),.headerDivDispositivos:nth-child(2),.headerDivDispositivos:nth-child(3),.headerDivDispositivos:nth-child(5),#menu1{
+                display: none;
+            }
         }
         .headerDivTitulo{
             #Img-p{
@@ -247,56 +253,33 @@ header{
                 }
             }
         }
-    }
-    /*Large screens/TV*/
-    @media screen and (min-width:1201px){
-        #disp1,#disp2,#disp3,#disp4,#menu1{
-            display: none;
-        }
-        .headerDivTitulo{
-            #Img-p{
-                display: none;
+        /*Large screens/TV*/
+        @media screen and (min-width:1201px){
+            .headerDivDispositivos{
+                .headerDivDispositivos:nth-child(1),.headerDivDispositivos:nth-child(2),.headerDivDispositivos:nth-child(3),.headerDivDispositivos:nth-child(4),#menu1{
+                    display: none;
+                }
             }
-            .logoDos{
-                display: none;
-            }
-            #titulo2{
-                display: none;
-            }
-            #botonesDeAcceso{
-                .acces{
-                    margin-right: 0;
-                    margin-left: 0.5rem;
+            .headerDivTitulo{
+                #Img-p{
+                    display: none;
+                }
+                .logoDos{
+                    display: none;
+                }
+                #titulo2{
+                    display: none;
+                }
+                #botonesDeAcceso{
+                    .acces{
+                        margin-right: 0;
+                        margin-left: 0.5rem;
+                    }
                 }
             }
         }
     }
-/*header con grid*/
-#headerSobreNos{
-    @include nGrid(grid,0,repeat(2,auto),repeat(2,auto));
-    @include templateAreas("titulo img" "texto img");
-    .headerDivTitulo{
-        grid-area: titulo;
-    }
-    .headerDivTexto{
-        grid-area: texto;
-    }
-    .headerDivImg{
-        grid-area: img;
-    }
-    /*Mobile devices*/
-    @media screen and (max-width:600px){
-        .headerDivImg{
-            display: none;
-        }
-    }
-    /*Ipad/tablets*/
-    @media screen and (min-width:601px) and (max-width:800px){
-        .headerDivImg{
-            display: none;
-        }
-    }
-}
+
 /*mains*/
 .indexMain{
     @include constructorFlex(flex,column,none,none,none);

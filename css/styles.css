@@ -150,6 +150,7 @@ header {
   /*Ipad/tablets*/
   /*Small screens/Laptops*/
   /*Desktops*/
+  /*Large screens/TV*/
 }
 header .headerDivTitulo {
   text-align: left;
@@ -236,7 +237,7 @@ header .headerDivTexto spam {
   header .headerDivTitulo #botonesDeAcceso {
     display: none;
   }
-  header #disp2, header #disp3, header #disp4, header #disp5 {
+  header .headerDivDispositivos .headerDivDispositivos:nth-child(2), header .headerDivDispositivos .headerDivDispositivos:nth-child(3), header .headerDivDispositivos .headerDivDispositivos:nth-child(4), header .headerDivDispositivos .headerDivDispositivos:nth-child(5) {
     display: none;
   }
 }
@@ -254,7 +255,7 @@ header .headerDivTexto spam {
   header .headerDivTitulo #botonesDeAcceso {
     display: none;
   }
-  header #disp1, header #disp3, header #disp4, header #disp5 {
+  header .headerDivDispositivos:nth-child(1), header .headerDivDispositivos:nth-child(3), header .headerDivDispositivos:nth-child(4), header .headerDivDispositivos:nth-child(5) {
     display: none;
   }
 }
@@ -272,12 +273,12 @@ header .headerDivTexto spam {
   header .headerDivTitulo #botonesDeAcceso {
     display: none;
   }
-  header #disp1, header #disp2, header #disp4, header #disp5 {
+  header .headerDivDispositivos .headerDivDispositivos:nth-child(1), header .headerDivDispositivos .headerDivDispositivos:nth-child(2), header .headerDivDispositivos .headerDivDispositivos:nth-child(4), header .headerDivDispositivos .headerDivDispositivos:nth-child(5) {
     display: none;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-  header #disp1, header #disp2, header #disp3, header #disp5, header #menu1 {
+  header .headerDivDispositivos .headerDivDispositivos:nth-child(1), header .headerDivDispositivos .headerDivDispositivos:nth-child(2), header .headerDivDispositivos .headerDivDispositivos:nth-child(3), header .headerDivDispositivos .headerDivDispositivos:nth-child(5), header .headerDivDispositivos #menu1 {
     display: none;
   }
   header .headerDivTitulo #Img-p {
@@ -306,53 +307,22 @@ header .headerDivTexto spam {
     font-size: 1rem;
   }
 }
-
-/*Large screens/TV*/
 @media screen and (min-width: 1201px) {
-  #disp1, #disp2, #disp3, #disp4, #menu1 {
+  header .headerDivDispositivos .headerDivDispositivos:nth-child(1), header .headerDivDispositivos .headerDivDispositivos:nth-child(2), header .headerDivDispositivos .headerDivDispositivos:nth-child(3), header .headerDivDispositivos .headerDivDispositivos:nth-child(4), header .headerDivDispositivos #menu1 {
     display: none;
   }
-  .headerDivTitulo #Img-p {
+  header .headerDivTitulo #Img-p {
     display: none;
   }
-  .headerDivTitulo .logoDos {
+  header .headerDivTitulo .logoDos {
     display: none;
   }
-  .headerDivTitulo #titulo2 {
+  header .headerDivTitulo #titulo2 {
     display: none;
   }
-  .headerDivTitulo #botonesDeAcceso .acces {
+  header .headerDivTitulo #botonesDeAcceso .acces {
     margin-right: 0;
     margin-left: 0.5rem;
-  }
-}
-/*header con grid*/
-#headerSobreNos {
-  display: grid;
-  gap: 0;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "titulo img" "texto img";
-  /*Mobile devices*/
-  /*Ipad/tablets*/
-}
-#headerSobreNos .headerDivTitulo {
-  grid-area: titulo;
-}
-#headerSobreNos .headerDivTexto {
-  grid-area: texto;
-}
-#headerSobreNos .headerDivImg {
-  grid-area: img;
-}
-@media screen and (max-width: 600px) {
-  #headerSobreNos .headerDivImg {
-    display: none;
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 800px) {
-  #headerSobreNos .headerDivImg {
-    display: none;
   }
 }
 
