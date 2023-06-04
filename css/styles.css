@@ -352,7 +352,7 @@ header .headerDivTexto spam {
   border-style: solid;
   border-width: 0.15rem;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .indexMain .divNavIndex div {
   width: 70%;
@@ -379,22 +379,19 @@ header .headerDivTexto spam {
   text-align: center;
   width: 30%;
 }
-.indexMain .divNavIndex:nth-child(1) {
-  margin-top: 1rem;
-}
 .indexMain .divNavIndex:hover {
   transition: 1s;
 }
-.indexMain .divNavIndex:hover:nth-child(1) {
+.indexMain .divNavIndex:nth-child(2):hover {
   border-color: rgba(65, 25, 211, 0.5490196078);
 }
-.indexMain .divNavIndex:hover:nth-child(2) {
+.indexMain .divNavIndex:nth-child(3):hover {
   border-color: rgba(9, 238, 40, 0.3803921569);
 }
-.indexMain .divNavIndex:hover:nth-child(3) {
+.indexMain .divNavIndex:nth-child(4):hover {
   border-color: rgba(251, 255, 0, 0.8);
 }
-.indexMain .divNavIndex:hover:nth-child(4) {
+.indexMain .divNavIndex:nth-child(5):hover {
   border-color: rgba(255, 60, 0, 0.6196078431);
 }
 @media screen and (max-width: 600px) {

@@ -292,7 +292,8 @@ header{
         border-style: solid;
         border-width: 0.15rem;
         border-radius: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
+        //margin-bottom: 1rem;
         div{ 
             width: 70%;
             margin: 1rem;
@@ -311,22 +312,19 @@ header{
             width: 30%;
         }
     }
-    .divNavIndex:nth-child(1){
-        margin-top: 1rem;
-    }
     .divNavIndex:hover{
         transition: 1s;
     }
-    .divNavIndex:hover:nth-child(1){
-        border-color: $nuestroServicios;
+    .divNavIndex:nth-child(2):hover{
+        border-color: #4119d38c;
     }
-    .divNavIndex:hover:nth-child(2){
+    .divNavIndex:nth-child(3):hover{
         border-color: $trabajosHechos;
     }
-    .divNavIndex:hover:nth-child(3){
+    .divNavIndex:nth-child(4):hover{
         border-color: $solicitarServicio;
     }
-    .divNavIndex:hover:nth-child(4){
+    .divNavIndex:nth-child(5):hover{
         border-color: $sobreNos;
     }
     /*Mobile devices*/
