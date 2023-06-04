@@ -45,7 +45,7 @@ body{
         margin-top: 10rem;
     }
     @include constructorFlex(flex,column,flex-start,center,none);
-    @include whg(1rem,100%,2rem);
+    @include whg(3rem,100%,2rem);
     position: fixed;
     background-image: linear-gradient(to right, black 5%, transparent 95%);
     padding: 0.1rem;
@@ -63,22 +63,22 @@ body{
     }
 }
 #menu1:hover{
-    transition: 1s;
+    transition: 0.5s;
     h2{
         transition: 1s;
         margin-left: 0;
         color: white;
     }
     #cero{
-        transition: 2s;
+        transition: 1s;
         @extend %noDisplay;
     }
     .acces{
         display:block;
         a{
             @extend %textoComun;
-            transition: 3s;
-            transition-delay: 1s;
+            transition: 1s;
+            transition-delay: 0.3s;
         }
     }
     @include constructorFlex(flex,column,flex-start,center,none);
@@ -218,6 +218,9 @@ header{
             display: none;
         }
         .headerDivTitulo{
+            #Img-p{
+                display: none;
+            }
             .logoDos{
                 display: none;
             }
@@ -251,6 +254,9 @@ header{
             display: none;
         }
         .headerDivTitulo{
+            #Img-p{
+                display: none;
+            }
             .logoDos{
                 display: none;
             }
@@ -295,7 +301,7 @@ header{
 .indexMain{
     @include constructorFlex(flex,column,none,none,none);
     padding-left: 1.5rem;
-    padding: 1rem;
+    padding: 2rem;
     .divNavIndex{
         @include constructorFlex(flex,row,none,none,none);
         transition: 2s;
@@ -353,6 +359,9 @@ header{
     }
     /*Ipad/Tablet*/
     @media screen and (min-width:601px) and (max-width:800px){
+        .indexMain{
+            padding: 2rem;
+        }
         .Img{
             display: none;
         }
@@ -382,22 +391,24 @@ header{
     @include templateAreas("d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "volver volver volver");
     align-items: center;
     justify-items: center;
-    margin: 1rem;
+    padding: 2rem;
     .divServMain{
         align-items: center;
         margin: 1rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        }
-        .divServMain:nth-child(1){
-            grid-area: d1;
-            text-align: right;
+    }
+    .divServMain:nth-child(1){
+        grid-area: d1;
+        text-align: right;
+        margin-left: 2rem;
         }
         .divServMain:nth-child(2){
             grid-area: d2;
         }
         .divServMain:nth-child(3){
             grid-area: d3;
+            margin-right: 2rem;
         }
         .divServMain:nth-child(4){
             grid-area: d4;
@@ -405,6 +416,7 @@ header{
         .divServMain:nth-child(5){
             grid-area: d5;
             text-align: right;
+            margin-left: 2rem;
         }
         .divServMain:nth-child(6){
             grid-area: d6;
@@ -443,13 +455,12 @@ header{
 .trabajosMain{
     @include nGrid(grid,1rem,repeat(3,auto),repeat(3,auto));
     @include templateAreas("divUno divDos divDos" "divTres divTres divCuatro" "volver volver volver");
-    margin: 1rem;
+    padding: 2rem;
     .divMainTrabajos{
         margin: 1rem;   
     }
     .divMainTrabajos:nth-child(1){
         @include divTrabajos(divUno,flex,column,right,right);
-        margin-right: 0;
     }
     .divMainTrabajos:nth-child(2){
         @include divTrabajos(divDos,flex,column,center,center);
@@ -459,7 +470,6 @@ header{
     }
     .divMainTrabajos:nth-child(4){
         @include divTrabajos(divCuatro,flex,column,left,left);
-        margin-left: 0;
     }
     #Volver{
         margin-left: auto;
@@ -670,6 +680,7 @@ header{
 }
 /*sobre nosotros*/
 .sobreNosotrosMain{
+    padding: 2rem;
     @include nGrid(grid,0,repeat(3,auto),repeat(4,auto));
     @include templateAreas("div1 div1 div2" "div3 div3 div4" "div5 div5 div6" "volver volver volver");
     .divNosMain{
@@ -701,7 +712,7 @@ header{
     }
     /*Mobile devices*/
     @media screen and (max-width:600px){
-        padding: 1rem;
+        padding: 2rem;
         @include nGrid(grid,1rem,100%,repeat(7,auto));
         @include templateAreas("div1" "div2" "div3" "div4" "div5" "div6" "volver");
         .divNosMain{
@@ -721,7 +732,7 @@ header{
                 display: none;
             }
         }
-        padding: 1rem;
+        padding: 2.5rem;
         @include nGrid(grid,1rem,100%,repeat(7,auto));
         @include templateAreas("div1" "div2" "div3" "div4" "div5" "div6" "volver");
             .divNosMain{

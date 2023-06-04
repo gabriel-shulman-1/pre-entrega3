@@ -40,7 +40,7 @@ header .headerDivTitulo #botonesDeAcceso .acces a, #menu1:hover .acces a, #menu1
   align-items: flex-start;
   justify-content: center;
   text-align: none;
-  width: 1rem;
+  width: 3rem;
   height: 100%;
   gap: 2rem;
   position: fixed;
@@ -105,7 +105,7 @@ header .headerDivTitulo #botonesDeAcceso .acces a, #menu1:hover .acces a, #menu1
 }
 
 #menu1:hover {
-  transition: 1s;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -124,14 +124,14 @@ header .headerDivTitulo #botonesDeAcceso .acces a, #menu1:hover .acces a, #menu1
   color: white;
 }
 #menu1:hover #cero {
-  transition: 2s;
+  transition: 1s;
 }
 #menu1:hover .acces {
   display: block;
 }
 #menu1:hover .acces a {
-  transition: 3s;
-  transition-delay: 1s;
+  transition: 1s;
+  transition-delay: 0.3s;
 }
 
 /*header*/
@@ -280,6 +280,9 @@ header .headerDivTexto spam {
   header #disp1, header #disp2, header #disp3, header #disp5, header #menu1 {
     display: none;
   }
+  header .headerDivTitulo #Img-p {
+    display: none;
+  }
   header .headerDivTitulo .logoDos {
     display: none;
   }
@@ -307,6 +310,9 @@ header .headerDivTexto spam {
 /*Large screens/TV*/
 @media screen and (min-width: 1201px) {
   #disp1, #disp2, #disp3, #disp4, #menu1 {
+    display: none;
+  }
+  .headerDivTitulo #Img-p {
     display: none;
   }
   .headerDivTitulo .logoDos {
@@ -358,7 +364,7 @@ header .headerDivTexto spam {
   justify-content: none;
   text-align: none;
   padding-left: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
   /*Mobile devices*/
   /*Ipad/Tablet*/
   /*Small screens/Laptops*/
@@ -430,6 +436,9 @@ header .headerDivTexto spam {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
+  .indexMain .indexMain {
+    padding: 2rem;
+  }
   .indexMain .Img {
     display: none;
   }
@@ -459,7 +468,7 @@ header .headerDivTexto spam {
   grid-template-areas: "d1 d1 d2" "d4 d3 d3" "d5 d5 d6" "d8 d7 d7" "volver volver volver";
   align-items: center;
   justify-items: center;
-  margin: 1rem;
+  padding: 2rem;
   /*Mobile devices*/
   /*Ipad/tablets*/
 }
@@ -472,12 +481,14 @@ header .headerDivTexto spam {
 .serviciosMain .divServMain:nth-child(1) {
   grid-area: d1;
   text-align: right;
+  margin-left: 2rem;
 }
 .serviciosMain .divServMain:nth-child(2) {
   grid-area: d2;
 }
 .serviciosMain .divServMain:nth-child(3) {
   grid-area: d3;
+  margin-right: 2rem;
 }
 .serviciosMain .divServMain:nth-child(4) {
   grid-area: d4;
@@ -485,6 +496,7 @@ header .headerDivTexto spam {
 .serviciosMain .divServMain:nth-child(5) {
   grid-area: d5;
   text-align: right;
+  margin-left: 2rem;
 }
 .serviciosMain .divServMain:nth-child(6) {
   grid-area: d6;
@@ -533,7 +545,7 @@ header .headerDivTexto spam {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "divUno divDos divDos" "divTres divTres divCuatro" "volver volver volver";
-  margin: 1rem;
+  padding: 2rem;
   /*Mobile devices*/
   /*Ipad/tablets*/
   /*Small screens/Laptops*/
@@ -547,7 +559,6 @@ header .headerDivTexto spam {
   flex-direction: column;
   align-items: right;
   text-align: right;
-  margin-right: 0;
 }
 .trabajosMain .divMainTrabajos:nth-child(2) {
   grid-area: divDos;
@@ -569,7 +580,6 @@ header .headerDivTexto spam {
   flex-direction: column;
   align-items: left;
   text-align: left;
-  margin-left: 0;
 }
 .trabajosMain #Volver {
   margin-left: auto;
@@ -787,6 +797,7 @@ header .headerDivTexto spam {
 
 /*sobre nosotros*/
 .sobreNosotrosMain {
+  padding: 2rem;
   display: grid;
   gap: 0;
   grid-template-columns: repeat(3, auto);
@@ -827,7 +838,7 @@ header .headerDivTexto spam {
 }
 @media screen and (max-width: 600px) {
   .sobreNosotrosMain {
-    padding: 1rem;
+    padding: 2rem;
     display: grid;
     gap: 1rem;
     grid-template-columns: 100%;
@@ -846,7 +857,7 @@ header .headerDivTexto spam {
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .sobreNosotrosMain {
-    padding: 1rem;
+    padding: 2.5rem;
     display: grid;
     gap: 1rem;
     grid-template-columns: 100%;
